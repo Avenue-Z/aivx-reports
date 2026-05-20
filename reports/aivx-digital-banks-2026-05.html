@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIVx Report — Fintech: Digital Banks — May 2026 | Avenue Z</title>
+  <meta name="description" content="AI Visibility Analysis for the Fintech: Digital Banks industry. Powered by Avenue Z AEO Intelligence.">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #000000;
+  --surface:   #272727;
+  --subtle:    #1a1a1a;
+  --white:     #FFFFFF;
+  --muted:     #8A8A8A;
+  --border:    rgba(255,255,255,0.06);
+  --yellow:    #FFFC60;
+  --green:     #60FF80;
+  --cyan:      #60FDFF;
+  --blue:      #39A0FF;
+  --purple:    #6034FF;
+  --grad:      linear-gradient(135deg, #FFFC60, #60FF80, #60FDFF, #39A0FF, #6034FF);
+  --sidebar-w: 240px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: #0a0a0a;
+  border-right: 1px solid var(--border);
+  position: fixed;
+  top: 0; left: 0;
+  overflow-y: auto;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  padding: 28px 24px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-logo .aivx-brand {
+  font-size: 18px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+.sidebar-logo .powered {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.sidebar-industry {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.sidebar-industry span {
+  display: block;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 4px;
+}
+
+.sidebar-nav {
+  padding: 16px 0;
+  flex: 1;
+}
+.sidebar-nav a {
+  display: block;
+  padding: 9px 24px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-left: 3px solid transparent;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  line-height: 1.4;
+}
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  color: var(--white);
+  border-left-color: var(--cyan);
+  background: rgba(96,253,255,0.05);
+}
+.sidebar-nav .nav-num {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 700;
+  margin-right: 6px;
+  letter-spacing: 0.06em;
+}
+
+.sidebar-footer {
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+}
+.sidebar-footer a {
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.sidebar-footer a:hover { color: var(--cyan); }
+
+/* ── Main Content ────────────────────────────────────────── */
+.main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  max-width: calc(100vw - var(--sidebar-w));
+}
+
+/* ── Hero ────────────────────────────────────────────────── */
+.hero {
+  padding: 72px 64px 64px;
+  background: linear-gradient(180deg, #0c0c0c 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+.hero-series {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.hero-industry {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 900;
+  line-height: 1.1;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 32px;
+}
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+/* ── Gradient Divider ────────────────────────────────────── */
+.grad-divider {
+  height: 1px;
+  background: var(--grad);
+  margin: 56px 0;
+  opacity: 0.6;
+}
+
+/* ── Section ─────────────────────────────────────────────── */
+.section {
+  padding: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--white);
+  padding-left: 16px;
+  border-left: 4px solid var(--cyan);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.section-intro {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  font-weight: 300;
+  max-width: 720px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+/* ── KPI Strip ───────────────────────────────────────────── */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.kpi-card {
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+}
+.kpi-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.kpi-value {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+.kpi-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* ── Topic Clusters ──────────────────────────────────────── */
+.clusters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+.cluster-card {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+.cluster-name {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cyan);
+  margin-bottom: 10px;
+}
+.cluster-prompts {
+  list-style: none;
+  padding: 0;
+}
+.cluster-prompts li {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  padding: 4px 0;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.4;
+  font-style: italic;
+}
+.cluster-prompts li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+/* ── Stat Callouts ───────────────────────────────────────── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.stat-callout {
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.stat-callout::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+}
+.stat-value {
+  font-size: 48px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.stat-source {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ── Engagement Modes ────────────────────────────────────── */
+.engagement-modes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+.engagement-mode-card {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+}
+.engagement-mode-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.engagement-mode-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--white);
+  flex: 1;
+}
+.engagement-share {
+  font-size: 18px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.engagement-mode-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ── Chart Wrapper ───────────────────────────────────────── */
+.chart-wrap {
+  background: #000;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 8px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+.chart-title {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding: 16px 16px 8px;
+}
+
+/* ── Two-column layout ───────────────────────────────────── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+/* ── Narrative Paragraphs ────────────────────────────────── */
+.narrative {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+  line-height: 1.75;
+  max-width: 780px;
+  margin-bottom: 20px;
+}
+
+/* ── Sub-Section ─────────────────────────────────────────── */
+.sub-section {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+.sub-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.sub-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.sub-intro {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  max-width: 640px;
+  margin-bottom: 24px;
+  line-height: 1.65;
+}
+
+/* ── Leaderboard Table ───────────────────────────────────── */
+.leaderboard-wrap {
+  overflow-x: auto;
+  margin: 24px 0;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.leaderboard {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.leaderboard thead tr {
+  border-bottom: 1px solid var(--border);
+}
+.leaderboard th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: #0a0a0a;
+  white-space: nowrap;
+}
+.leaderboard tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.1s;
+}
+.leaderboard tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+.leaderboard tbody tr:last-child {
+  border-bottom: none;
+}
+.leaderboard td {
+  padding: 14px 20px;
+  vertical-align: middle;
+}
+.rank-num {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--muted);
+  width: 40px;
+}
+.rank-num.top3 {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 16px;
+}
+.brand-name {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 14px;
+}
+.sov-bar-cell { min-width: 160px; }
+.sov-bar-outer {
+  background: rgba(255,255,255,0.06);
+  border-radius: 9999px;
+  height: 6px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.sov-bar-inner {
+  height: 100%;
+  border-radius: 9999px;
+  background: var(--grad);
+}
+.sov-pct {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.cite-count {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+.prompt-reach {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ── Insight Callout ─────────────────────────────────────── */
+.insight-box {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--yellow);
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.65;
+  font-weight: 400;
+}
+.insight-box strong {
+  color: var(--yellow);
+  font-weight: 800;
+}
+
+/* ── Source Table ────────────────────────────────────────── */
+.source-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+.source-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 13px;
+}
+.source-table td:first-child {
+  color: var(--cyan);
+  font-weight: 700;
+  width: 60%;
+}
+.source-table td:last-child {
+  color: var(--muted);
+  text-align: right;
+  font-weight: 600;
+}
+
+/* ── Trends ──────────────────────────────────────────────── */
+.trends-list { margin-top: 8px; }
+.trend-item {
+  padding: 28px 32px;
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.trend-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--grad);
+}
+.trend-num {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.trend-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.trend-insight {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+.trend-implication {
+  font-size: 13px;
+  color: var(--cyan);
+  font-weight: 700;
+  line-height: 1.5;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.trend-implication::before {
+  content: 'Strategic Implication → ';
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* ── Priority Cards ──────────────────────────────────────── */
+.priority-cards { margin-top: 8px; }
+.priority-card {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.priority-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+}
+.priority-num {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  min-width: 48px;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+}
+.priority-body { flex: 1; }
+.priority-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.priority-why {
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.priority-what {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.65;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border-left: 3px solid var(--cyan);
+}
+.priority-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.priority-owner {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Badges ──────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.badge-leader     { background: rgba(255,252,96,0.12);  color: #FFFC60; }
+.badge-challenger { background: rgba(96,253,255,0.12);  color: #60FDFF; }
+.badge-emerging   { background: rgba(57,160,255,0.12);  color: #39A0FF; }
+.badge-developing { background: rgba(138,138,138,0.12); color: #8A8A8A; }
+
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  padding: 48px 64px;
+  border-top: 1px solid var(--border);
+  background: #050505;
+}
+.footer-grad-line {
+  height: 1px;
+  background: var(--grad);
+  margin-bottom: 40px;
+  opacity: 0.4;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer-brand .avz-name {
+  font-size: 18px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+.footer-desc {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 400px;
+  line-height: 1.65;
+}
+.footer-link {
+  font-size: 13px;
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+  display: inline-block;
+}
+.footer-link:hover { text-decoration: underline; }
+.footer-disclaimer {
+  font-size: 11px;
+  color: rgba(138,138,138,0.5);
+  margin-top: 32px;
+  line-height: 1.5;
+}
+
+/* ── Methodology note ────────────────────────────────────── */
+.method-note {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+  line-height: 1.65;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-top: 24px;
+  max-width: 680px;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  :root { --sidebar-w: 0px; }
+  .sidebar { display: none; }
+  .main { margin-left: 0; max-width: 100%; }
+  .section { padding: 40px 24px; }
+  .hero { padding: 48px 24px; }
+  .kpi-strip { grid-template-columns: repeat(2, 1fr); }
+  .stat-grid { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .engagement-modes-grid { grid-template-columns: 1fr; }
+  .priority-card { flex-direction: column; gap: 16px; }
+  .priority-num { font-size: 36px; }
+  .footer { padding: 40px 24px; }
+}
+</style>
+</head>
+<body>
+  
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <div class="aivx-brand">AIVx</div>
+    <div class="powered">Powered by Avenue Z</div>
+  </div>
+  <div class="sidebar-industry">
+    Industry Report
+    <span>Fintech: Digital Banks</span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#section-1"><span class="nav-num">01</span> Research Overview</a>
+    <a href="#section-2"><span class="nav-num">02</span> State of AI Usage</a>
+    <a href="#section-3"><span class="nav-num">03</span> Analysis Findings</a>
+    <a href="#section-4"><span class="nav-num">04</span> Winners &amp; Losers</a>
+    <a href="#section-5"><span class="nav-num">05</span> What To Do Next</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="https://avenuez.com" target="_blank" rel="noopener">avenuez.com ↗</a>
+  </div>
+</nav>
+  <div class="main">
+    
+<header class="hero">
+  <div class="hero-series">AIVx Industry Intelligence Report</div>
+  <h1 class="hero-industry">Fintech: Digital Banks</h1>
+  <div class="hero-subtitle">AI Visibility Analysis &nbsp;·&nbsp; May 2026</div>
+  <div class="hero-meta">
+    <span class="hero-badge"><span class="dot"></span>48 Brands Analyzed</span>
+    <span class="hero-badge"><span class="dot"></span>75 Prompts</span>
+    <span class="hero-badge"><span class="dot"></span>ChatGPT</span>
+    <span class="hero-badge"><span class="dot"></span>Powered by Avenue Z</span>
+  </div>
+</header>
+    
+<section id="section-1" class="section">
+  <div class="section-label">01 / Research Overview</div>
+  <h2 class="section-title">How This Analysis Was Conducted</h2>
+  <p class="section-intro">
+    This report is grounded in a structured analysis of how AI models respond
+    to real buyer and consumer queries in the Fintech: Digital Banks category.
+    Every data point in this report traces back to observed AI behavior — not surveys,
+    not keyword rankings, not traffic estimates.
+  </p>
+
+  <div class="kpi-strip">
+    <div class="kpi-card">
+      <div class="kpi-label">Competitors Analyzed</div>
+      <div class="kpi-value">48</div>
+      <div class="kpi-sub">Brands tracked across all prompts</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Prompts Analyzed</div>
+      <div class="kpi-value">75</div>
+      <div class="kpi-sub">Unique buyer and research queries</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">AI Platform</div>
+      <div class="kpi-value">ChatGPT</div>
+      <div class="kpi-sub">V1 — single platform analysis</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Topic Clusters</div>
+      <div class="kpi-value">5</div>
+      <div class="kpi-sub">Query categories · 7-day collection window</div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-label">Methodology</div>
+    <div class="sub-title">What We Measured</div>
+    <p class="narrative">
+      A Peec workspace was configured for the Fintech: Digital Banks category,
+      populated with 75 prompts spanning 5 distinct topic clusters.
+      Each prompt reflects a real question that buyers, researchers, or decision-makers
+      are asking AI models when evaluating brands in this space.
+    </p>
+    <p class="narrative">
+      For every prompt, we recorded which brands were cited, whether the source was
+      earned media (editorial, reference, user-generated) or owned media (brand-controlled
+      content), and the citation rank within the AI response. The result is a dataset
+      that directly measures how AI models perceive and recommend brands in this category.
+    </p>
+    <div class="method-note">
+      Analysis covers ChatGPT responses only (V1). Multi-platform expansion (Perplexity,
+      Gemini, Claude) planned for V2. All data reflects a 7-day collection window.
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-label">Topic Coverage</div>
+    <div class="sub-title">Query Clusters Analyzed</div>
+    <p class="sub-intro">
+      Prompts were organized into 5 topic clusters representing the major
+      question categories buyers use when researching this space.
+    </p>
+    <div class="clusters-grid">
+        <div class="cluster-card">
+          <div class="cluster-name">Banks</div>
+          <ul class="cluster-prompts"><li>&ldquo;Which banking apps offer high-yield savings and strong app store ratings?&rdquo;</li><li>&ldquo;Which banking apps offer checking features with no overdraft fees?&rdquo;</li></ul>
+        </div>
+        <div class="cluster-card">
+          <div class="cluster-name">Digital Banks</div>
+          <ul class="cluster-prompts"><li>&ldquo;Which digital banks offer no minimum balance and no monthly maintenance fees?&rdquo;</li><li>&ldquo;Which digital banks give you early paycheck access and automatic savings tools?&rdquo;</li></ul>
+        </div>
+        <div class="cluster-card">
+          <div class="cluster-name">Mobile Banks</div>
+          <ul class="cluster-prompts"><li>&ldquo;Which mobile banks offer no-fee checking and built-in budgeting tools?&rdquo;</li><li>&ldquo;Which mobile banks have the strongest reputations among U.S. users?&rdquo;</li></ul>
+        </div>
+        <div class="cluster-card">
+          <div class="cluster-name">Neobanks</div>
+          <ul class="cluster-prompts"><li>&ldquo;What are the top neobanks with no overdraft penalties?&rdquo;</li><li>&ldquo;What are the top neobanks for building credit from scratch?&rdquo;</li></ul>
+        </div>
+        <div class="cluster-card">
+          <div class="cluster-name">Online Banks</div>
+          <ul class="cluster-prompts"><li>&ldquo;Which online banks offer fee-free overdraft options or account cushions?&rdquo;</li><li>&ldquo;Which online banks offer automatic savings features with competitive rates?&rdquo;</li></ul>
+        </div></div>
+  </div>
+
+  <div class="grad-divider"></div>
+</section>
+    
+<section id="section-2" class="section">
+  <div class="section-label">02 / State of AI Usage</div>
+  <h2 class="section-title">Why AI Visibility Matters Right Now</h2>
+  <p class="section-intro">
+    Before examining how specific brands perform in AI, it is important to understand
+    the scale and trajectory of AI adoption — and what the shift means for brand
+    discoverability in the Fintech: Digital Banks category.
+  </p>
+
+  <div class="stat-grid">
+        <div class="stat-callout">
+          <div class="stat-value">400M+</div>
+          <div class="stat-label">ChatGPT Monthly Active Users</div>
+          <div class="stat-source">OpenAI, Feb 2025</div>
+        </div>
+        <div class="stat-callout">
+          <div class="stat-value">55%</div>
+          <div class="stat-label">US Adults Who Have Used Generative AI</div>
+          <div class="stat-source">Pew Research, 2024</div>
+        </div>
+        <div class="stat-callout">
+          <div class="stat-value">65%+</div>
+          <div class="stat-label">B2B Buyers Using AI in Purchase Decisions</div>
+          <div class="stat-source">Gartner/Forrester, 2025</div>
+        </div>
+        <div class="stat-callout">
+          <div class="stat-value">~60%</div>
+          <div class="stat-label">ChatGPT Share of Generative AI Tool Usage</div>
+          <div class="stat-source">Various industry estimates, 2025</div>
+        </div></div>
+
+  <div class="two-col">
+    <div>
+      <p class="narrative">AI adoption has crossed the mainstream threshold. More than half of US adults have now used a generative AI tool, and weekly active usage is growing rapidly across every demographic. For business buyers, AI is already embedded in the research and decision-making process — 65% of B2B buyers report using AI tools when evaluating vendors and making purchasing decisions.</p>
+      <p class="narrative">The behavioral shift is structural, not cyclical. Consumers and buyers are increasingly turning to AI as a first-stop for information — before visiting brand websites, before reading reviews, and before engaging with sales teams. When an AI model recommends a brand, that recommendation carries authority. When a brand is absent from AI responses, it is effectively invisible to a growing segment of its target market.</p>
+      <p class="narrative">For brands in this industry, AI visibility is not a future concern — it is a present competitive reality. The brands that establish strong AI citation patterns now will benefit from compounding advantage as AI usage continues to grow. The brands that wait will find the gap harder and more expensive to close with each passing quarter.</p>
+    </div>
+    <div>
+      <div class="chart-wrap">
+        <div class="chart-title">AI Platform Market Share</div>
+        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="553cdf54-7d2d-4a7c-ae2a-de92d8cc14d2" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("553cdf54-7d2d-4a7c-ae2a-de92d8cc14d2")) {                    Plotly.newPlot(                        "553cdf54-7d2d-4a7c-ae2a-de92d8cc14d2",                        [{"hole":0.62,"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003eShare: %{percent}\u003cextra\u003e\u003c\u002fextra\u003e","insidetextfont":{"color":"#FFFFFF","family":"Nunito Sans","size":13},"labels":["ChatGPT","Google Gemini","Perplexity","Claude","Other"],"marker":{"colors":["#FF6B35","#60FF80","#60FDFF","#39A0FF","#6034FF"],"line":{"color":"#000000","width":3}},"outsidetextfont":{"color":"rgba(0,0,0,0)","size":1},"textinfo":"percent","textposition":"inside","values":[60,20,10,5,5],"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Nunito Sans, sans-serif","color":"#FFFFFF","size":13},"hoverlabel":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":13},"bgcolor":"#272727","bordercolor":"rgba(255,255,255,0.1)"},"legend":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":12},"orientation":"h","bgcolor":"rgba(0,0,0,0)","borderwidth":0,"x":0.5,"y":-0.06,"xanchor":"center","yanchor":"top"},"margin":{"l":24,"r":24,"t":24,"b":64},"paper_bgcolor":"#000000","plot_bgcolor":"#1a1a1a","showlegend":true,"height":400,"annotations":[{"font":{"color":"#8A8A8A","family":"Nunito Sans","size":12},"showarrow":false,"text":"AI Platform\u003cbr\u003eMarket Share","x":0.5,"xanchor":"center","y":0.5,"yanchor":"middle"}]},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="sub-section">
+    <div class="sub-label">How Users Engage with AI</div>
+    <div class="sub-title">Four Interfaces — Four Visibility Surfaces</div>
+    <p class="sub-intro">
+      AI is not a single channel. Users interact with AI models across four distinct
+      surfaces, each with different implications for brand discoverability.
+    </p>
+    <div class="engagement-modes-grid">
+        <div class="engagement-mode-card">
+          <div class="engagement-mode-header">
+            <span class="engagement-mode-name">Text Chat</span>
+            <span class="engagement-share">73%</span>
+            <span class="badge badge-developing" style="font-size:9px">Mature</span>
+          </div>
+          <p class="engagement-mode-desc">The dominant interface. Users type queries directly into ChatGPT, Claude, or Gemini. Brand citations appear in direct responses — the primary visibility surface.</p>
+        </div>
+        <div class="engagement-mode-card">
+          <div class="engagement-mode-header">
+            <span class="engagement-mode-name">AI-Augmented Search</span>
+            <span class="engagement-share">18%</span>
+            <span class="badge badge-challenger" style="font-size:9px">Fast-growing</span>
+          </div>
+          <p class="engagement-mode-desc">Perplexity, Bing Copilot, and Google AI Overviews layer AI responses on top of web search. Citations appear with source links — visibility requires both brand authority and web presence.</p>
+        </div>
+        <div class="engagement-mode-card">
+          <div class="engagement-mode-header">
+            <span class="engagement-mode-name">Voice &amp; Mobile</span>
+            <span class="engagement-share">6%</span>
+            <span class="badge badge-emerging" style="font-size:9px">Emerging</span>
+          </div>
+          <p class="engagement-mode-desc">Siri, Alexa, and mobile AI assistants surface single-answer responses. Brand that owns the top citation wins the entire query — zero-sum visibility.</p>
+        </div>
+        <div class="engagement-mode-card">
+          <div class="engagement-mode-header">
+            <span class="engagement-mode-name">Agentic / Autonomous</span>
+            <span class="engagement-share">3%</span>
+            <span class="badge badge-leader" style="font-size:9px">Early-stage</span>
+          </div>
+          <p class="engagement-mode-desc">AI agents that browse, compare, and transact on behalf of users. Early-stage but growing fast. Brands with structured data and API accessibility have a significant head start.</p>
+        </div></div>
+  </div>
+
+  <div class="grad-divider"></div>
+</section>
+    
+<section id="section-3" class="section">
+  <div class="section-label">03 / Findings</div>
+  <h2 class="section-title">Analysis of AI Visibility in Fintech: Digital Banks</h2>
+  <p class="section-intro">
+    Five lenses on the data: earned media, owned media, share of voice, technical factors,
+    and general trends. Together they tell the complete story of how AI models perceive
+    and recommend brands in this category.
+  </p>
+  
+  <div class="sub-section">
+    <div class="sub-label">3A / Share of Voice</div>
+    <div class="sub-title">AI Visibility Leaderboard</div>
+    <p class="sub-intro">Visibility is relatively distributed — top 5 brands hold 41.0% of AI citations.</p>
+    <div class="insight-box">
+      <strong>Chime</strong> leads the category with 8.7% AI share
+      of voice, appearing in 97.3% of all prompts analyzed.
+      The top 10 brands account for 68.6% of total citations.
+    </div>
+    <div class="leaderboard-wrap">
+      <table class="leaderboard">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Brand</th>
+            <th>AI Visibility</th>
+            <th>Citations</th>
+            <th>Prompt Reach</th>
+            <th>Tier</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><span class="rank-num top3">1</span></td>
+          <td class="brand-name">Chime</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:19.14%"></div>
+            </div>
+            <span class="sov-pct">8.7%</span>
+          </td>
+          <td><span class="cite-count">73</span></td>
+          <td><span class="prompt-reach">97.3%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num top3">2</span></td>
+          <td class="brand-name">SoFi</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:18.26%"></div>
+            </div>
+            <span class="sov-pct">8.3%</span>
+          </td>
+          <td><span class="cite-count">70</span></td>
+          <td><span class="prompt-reach">93.3%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num top3">3</span></td>
+          <td class="brand-name">Varo</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:18.26%"></div>
+            </div>
+            <span class="sov-pct">8.3%</span>
+          </td>
+          <td><span class="cite-count">70</span></td>
+          <td><span class="prompt-reach">93.3%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">4</span></td>
+          <td class="brand-name">Ally</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:17.82%"></div>
+            </div>
+            <span class="sov-pct">8.1%</span>
+          </td>
+          <td><span class="cite-count">68</span></td>
+          <td><span class="prompt-reach">90.7%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">5</span></td>
+          <td class="brand-name">Current</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:16.72%"></div>
+            </div>
+            <span class="sov-pct">7.6%</span>
+          </td>
+          <td><span class="cite-count">64</span></td>
+          <td><span class="prompt-reach">85.3%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">6</span></td>
+          <td class="brand-name">Capital One</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:16.5%"></div>
+            </div>
+            <span class="sov-pct">7.5%</span>
+          </td>
+          <td><span class="cite-count">63</span></td>
+          <td><span class="prompt-reach">84.0%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">7</span></td>
+          <td class="brand-name">Discover</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:14.52%"></div>
+            </div>
+            <span class="sov-pct">6.6%</span>
+          </td>
+          <td><span class="cite-count">56</span></td>
+          <td><span class="prompt-reach">74.7%</span></td>
+          <td><span class="badge badge-leader">Leader</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">8</span></td>
+          <td class="brand-name">Axos Bank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:11.22%"></div>
+            </div>
+            <span class="sov-pct">5.1%</span>
+          </td>
+          <td><span class="cite-count">43</span></td>
+          <td><span class="prompt-reach">57.3%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">9</span></td>
+          <td class="brand-name">Chase</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:9.680000000000001%"></div>
+            </div>
+            <span class="sov-pct">4.4%</span>
+          </td>
+          <td><span class="cite-count">37</span></td>
+          <td><span class="prompt-reach">49.3%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">10</span></td>
+          <td class="brand-name">Nota</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:8.8%"></div>
+            </div>
+            <span class="sov-pct">4.0%</span>
+          </td>
+          <td><span class="cite-count">34</span></td>
+          <td><span class="prompt-reach">45.3%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">11</span></td>
+          <td class="brand-name">Revolut</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:7.040000000000001%"></div>
+            </div>
+            <span class="sov-pct">3.2%</span>
+          </td>
+          <td><span class="cite-count">27</span></td>
+          <td><span class="prompt-reach">36.0%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">12</span></td>
+          <td class="brand-name">Wells Fargo</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:5.940000000000001%"></div>
+            </div>
+            <span class="sov-pct">2.7%</span>
+          </td>
+          <td><span class="cite-count">23</span></td>
+          <td><span class="prompt-reach">30.7%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">13</span></td>
+          <td class="brand-name">Bank of America</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:5.06%"></div>
+            </div>
+            <span class="sov-pct">2.3%</span>
+          </td>
+          <td><span class="cite-count">19</span></td>
+          <td><span class="prompt-reach">25.3%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">14</span></td>
+          <td class="brand-name">Alliant Credit Union</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:4.620000000000001%"></div>
+            </div>
+            <span class="sov-pct">2.1%</span>
+          </td>
+          <td><span class="cite-count">18</span></td>
+          <td><span class="prompt-reach">24.0%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">15</span></td>
+          <td class="brand-name">Monzo</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:4.18%"></div>
+            </div>
+            <span class="sov-pct">1.9%</span>
+          </td>
+          <td><span class="cite-count">16</span></td>
+          <td><span class="prompt-reach">21.3%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">16</span></td>
+          <td class="brand-name">Synchrony Bank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:3.9600000000000004%"></div>
+            </div>
+            <span class="sov-pct">1.8%</span>
+          </td>
+          <td><span class="cite-count">15</span></td>
+          <td><span class="prompt-reach">20.0%</span></td>
+          <td><span class="badge badge-challenger">Challenger</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">17</span></td>
+          <td class="brand-name">Wealthfront</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:3.9600000000000004%"></div>
+            </div>
+            <span class="sov-pct">1.8%</span>
+          </td>
+          <td><span class="cite-count">15</span></td>
+          <td><span class="prompt-reach">20.0%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">18</span></td>
+          <td class="brand-name">N26</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:3.74%"></div>
+            </div>
+            <span class="sov-pct">1.7%</span>
+          </td>
+          <td><span class="cite-count">14</span></td>
+          <td><span class="prompt-reach">18.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">19</span></td>
+          <td class="brand-name">Dave</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:3.3000000000000003%"></div>
+            </div>
+            <span class="sov-pct">1.5%</span>
+          </td>
+          <td><span class="cite-count">13</span></td>
+          <td><span class="prompt-reach">17.3%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">20</span></td>
+          <td class="brand-name">MoneyLion</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:2.8600000000000003%"></div>
+            </div>
+            <span class="sov-pct">1.3%</span>
+          </td>
+          <td><span class="cite-count">11</span></td>
+          <td><span class="prompt-reach">14.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">21</span></td>
+          <td class="brand-name">Wise</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:2.8600000000000003%"></div>
+            </div>
+            <span class="sov-pct">1.3%</span>
+          </td>
+          <td><span class="cite-count">11</span></td>
+          <td><span class="prompt-reach">14.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">22</span></td>
+          <td class="brand-name">Upgrade</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.9800000000000002%"></div>
+            </div>
+            <span class="sov-pct">0.9%</span>
+          </td>
+          <td><span class="cite-count">8</span></td>
+          <td><span class="prompt-reach">10.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">23</span></td>
+          <td class="brand-name">Starling Bank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.7600000000000002%"></div>
+            </div>
+            <span class="sov-pct">0.8%</span>
+          </td>
+          <td><span class="cite-count">7</span></td>
+          <td><span class="prompt-reach">9.3%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">24</span></td>
+          <td class="brand-name">Quontic Bank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.7600000000000002%"></div>
+            </div>
+            <span class="sov-pct">0.8%</span>
+          </td>
+          <td><span class="cite-count">7</span></td>
+          <td><span class="prompt-reach">9.3%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">25</span></td>
+          <td class="brand-name">LendingClub</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.54%"></div>
+            </div>
+            <span class="sov-pct">0.7%</span>
+          </td>
+          <td><span class="cite-count">6</span></td>
+          <td><span class="prompt-reach">8.0%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">26</span></td>
+          <td class="brand-name">Aspiration</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.54%"></div>
+            </div>
+            <span class="sov-pct">0.7%</span>
+          </td>
+          <td><span class="cite-count">6</span></td>
+          <td><span class="prompt-reach">8.0%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">27</span></td>
+          <td class="brand-name">Lili</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.32%"></div>
+            </div>
+            <span class="sov-pct">0.6%</span>
+          </td>
+          <td><span class="cite-count">5</span></td>
+          <td><span class="prompt-reach">6.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">28</span></td>
+          <td class="brand-name">bunq</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.32%"></div>
+            </div>
+            <span class="sov-pct">0.6%</span>
+          </td>
+          <td><span class="cite-count">5</span></td>
+          <td><span class="prompt-reach">6.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">29</span></td>
+          <td class="brand-name">OnePay</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.32%"></div>
+            </div>
+            <span class="sov-pct">0.6%</span>
+          </td>
+          <td><span class="cite-count">5</span></td>
+          <td><span class="prompt-reach">6.7%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">30</span></td>
+          <td class="brand-name">Nubank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:1.1%"></div>
+            </div>
+            <span class="sov-pct">0.5%</span>
+          </td>
+          <td><span class="cite-count">4</span></td>
+          <td><span class="prompt-reach">5.3%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">31</span></td>
+          <td class="brand-name">Albert</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.8800000000000001%"></div>
+            </div>
+            <span class="sov-pct">0.4%</span>
+          </td>
+          <td><span class="cite-count">3</span></td>
+          <td><span class="prompt-reach">4.0%</span></td>
+          <td><span class="badge badge-emerging">Emerging</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">32</span></td>
+          <td class="brand-name">Novo</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.8800000000000001%"></div>
+            </div>
+            <span class="sov-pct">0.4%</span>
+          </td>
+          <td><span class="cite-count">3</span></td>
+          <td><span class="prompt-reach">4.0%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">33</span></td>
+          <td class="brand-name">Green Dot</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.8800000000000001%"></div>
+            </div>
+            <span class="sov-pct">0.4%</span>
+          </td>
+          <td><span class="cite-count">3</span></td>
+          <td><span class="prompt-reach">4.0%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">34</span></td>
+          <td class="brand-name">WeBank</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.8800000000000001%"></div>
+            </div>
+            <span class="sov-pct">0.4%</span>
+          </td>
+          <td><span class="cite-count">3</span></td>
+          <td><span class="prompt-reach">4.0%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">35</span></td>
+          <td class="brand-name">Stash</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.44000000000000006%"></div>
+            </div>
+            <span class="sov-pct">0.2%</span>
+          </td>
+          <td><span class="cite-count">2</span></td>
+          <td><span class="prompt-reach">2.7%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">36</span></td>
+          <td class="brand-name">NorthOne</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.44000000000000006%"></div>
+            </div>
+            <span class="sov-pct">0.2%</span>
+          </td>
+          <td><span class="cite-count">2</span></td>
+          <td><span class="prompt-reach">2.7%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">37</span></td>
+          <td class="brand-name">Perpay</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.44000000000000006%"></div>
+            </div>
+            <span class="sov-pct">0.2%</span>
+          </td>
+          <td><span class="cite-count">2</span></td>
+          <td><span class="prompt-reach">2.7%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">38</span></td>
+          <td class="brand-name">MAJORITY</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.44000000000000006%"></div>
+            </div>
+            <span class="sov-pct">0.2%</span>
+          </td>
+          <td><span class="cite-count">2</span></td>
+          <td><span class="prompt-reach">2.7%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">39</span></td>
+          <td class="brand-name">Qube Money</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">40</span></td>
+          <td class="brand-name">Oxygen</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">41</span></td>
+          <td class="brand-name">Truist</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">42</span></td>
+          <td class="brand-name">Oportun</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">43</span></td>
+          <td class="brand-name">Greenwood</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">44</span></td>
+          <td class="brand-name">Greenlight</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">45</span></td>
+          <td class="brand-name">Credit Sesame</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">46</span></td>
+          <td class="brand-name">Brex</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">47</span></td>
+          <td class="brand-name">Avant</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num ">48</span></td>
+          <td class="brand-name">cred.ai</td>
+          <td class="sov-bar-cell">
+            <div class="sov-bar-outer">
+              <div class="sov-bar-inner" style="width:0.22000000000000003%"></div>
+            </div>
+            <span class="sov-pct">0.1%</span>
+          </td>
+          <td><span class="cite-count">1</span></td>
+          <td><span class="prompt-reach">1.3%</span></td>
+          <td><span class="badge badge-developing">Developing</span></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div class="two-col" style="margin-top:32px">
+      <div>
+        <div class="chart-wrap">
+          <div class="chart-title">Share of Voice — Top 5 Brands</div>
+          <div>                            <div id="5125d6b7-d344-4ccb-a591-3038d1dfae3d" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5125d6b7-d344-4ccb-a591-3038d1dfae3d")) {                    Plotly.newPlot(                        "5125d6b7-d344-4ccb-a591-3038d1dfae3d",                        [{"hole":0.62,"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003eSOV: %{value}%\u003cextra\u003e\u003c\u002fextra\u003e","insidetextfont":{"color":"#FFFFFF","family":"Nunito Sans","size":13},"labels":["Chime","SoFi","Varo","Ally","Current","Other"],"marker":{"colors":["#FF6B35","#60FF80","#60FDFF","#39A0FF","#6034FF","#3a3a3a"],"line":{"color":"#000000","width":3}},"outsidetextfont":{"color":"rgba(0,0,0,0)","size":1},"textinfo":"percent","textposition":"inside","values":[8.7,8.3,8.3,8.1,7.6,59.0],"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Nunito Sans, sans-serif","color":"#FFFFFF","size":13},"hoverlabel":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":13},"bgcolor":"#272727","bordercolor":"rgba(255,255,255,0.1)"},"legend":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":12},"orientation":"h","bgcolor":"rgba(0,0,0,0)","borderwidth":0,"x":0.5,"y":-0.06,"xanchor":"center","yanchor":"top"},"margin":{"l":24,"r":24,"t":24,"b":64},"paper_bgcolor":"#000000","plot_bgcolor":"#1a1a1a","showlegend":true,"height":400,"annotations":[{"font":{"color":"#FFFFFF","family":"Nunito Sans","size":13},"showarrow":false,"text":"\u003cb\u003eChime\u003c\u002fb\u003e\u003cbr\u003e8.7% SOV","x":0.5,"xanchor":"center","y":0.5,"yanchor":"middle"}]},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+        </div>
+      </div>
+      <div>
+        <div class="chart-wrap">
+          <div class="chart-title">Citation Volume — Top 15 Brands</div>
+          <div>                            <div id="a72494a0-6a41-47a5-adb4-4749874fd246" class="plotly-graph-div" style="height:570px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a72494a0-6a41-47a5-adb4-4749874fd246")) {                    Plotly.newPlot(                        "a72494a0-6a41-47a5-adb4-4749874fd246",                        [{"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003eCitations: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#8A8A8A","#6034FF","#39A0FF","#60FDFF","#60FF80","#FF6B35"],"line":{"color":"rgba(0,0,0,0)","width":0}},"orientation":"h","text":["16","18","19","23","27","34","37","43","56","63","64","68","70","70","73"],"textfont":{"color":"#8A8A8A","size":11},"textposition":"outside","x":[16,18,19,23,27,34,37,43,56,63,64,68,70,70,73],"y":["Monzo","Alliant Credit Union","Bank of America","Wells Fargo","Revolut","Nota","Chase","Axos Bank","Discover","Capital One","Current","Ally","Varo","SoFi","Chime"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Nunito Sans, sans-serif","color":"#FFFFFF","size":13},"hoverlabel":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":13},"bgcolor":"#272727","bordercolor":"rgba(255,255,255,0.1)"},"xaxis":{"tickfont":{"color":"#8A8A8A","size":11},"title":{"text":""},"gridcolor":"rgba(255,255,255,0.06)","showgrid":true,"zeroline":false},"yaxis":{"tickfont":{"color":"#FFFFFF","size":12,"family":"Nunito Sans"},"title":{"text":""},"showgrid":false},"paper_bgcolor":"#000000","plot_bgcolor":"#1a1a1a","height":570,"bargap":0.38},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sub-section">
+    <div class="sub-label">3B / Earned Media</div>
+    <div class="sub-title">How Third-Party Sources Drive AI Citations</div>
+    <p class="sub-intro">
+      Earned media — editorial coverage, reference sources, and user-generated content —
+      accounts for 91.3% of all AI citations in this category.
+    </p>
+    <div class="insight-box">
+      <strong>91.3% earned</strong> vs. 8.7% owned.
+      Third-party credibility is the primary signal AI models use to evaluate and cite brands
+      in the Fintech: Digital Banks space.
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="chart-wrap">
+          <div class="chart-title">Earned Media Type Breakdown</div>
+          <div>                            <div id="ea834066-47e2-470b-876d-0a66344cf319" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ea834066-47e2-470b-876d-0a66344cf319")) {                    Plotly.newPlot(                        "ea834066-47e2-470b-876d-0a66344cf319",                        [{"hole":0.6,"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003eCitations: %{value}\u003cextra\u003e\u003c\u002fextra\u003e","insidetextfont":{"color":"#FFFFFF","family":"Nunito Sans","size":13},"labels":["Direct Recommendation","Editorial","Owned_Blog","Reference"],"marker":{"colors":["#FF6B35","#60FF80","#60FDFF","#39A0FF"],"line":{"color":"#000000","width":3}},"outsidetextfont":{"color":"rgba(0,0,0,0)","size":1},"textinfo":"percent","textposition":"inside","values":[10,560,20,180],"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Nunito Sans, sans-serif","color":"#FFFFFF","size":13},"hoverlabel":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":13},"bgcolor":"#272727","bordercolor":"rgba(255,255,255,0.1)"},"legend":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":12},"orientation":"h","bgcolor":"rgba(0,0,0,0)","borderwidth":0,"x":0.5,"y":-0.06,"xanchor":"center","yanchor":"top"},"margin":{"l":24,"r":24,"t":24,"b":64},"paper_bgcolor":"#000000","plot_bgcolor":"#1a1a1a","showlegend":true,"height":360},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+        </div>
+      </div>
+      <div>
+        <p class="narrative">Among earned citations, <strong>Editorial</strong> dominates at 72.7% — trade press, industry blogs, and third-party media coverage — the primary signal AI models use to evaluate brand authority. <strong>Direct Recommendation</strong> (1.3%) and <strong>Owned_Blog</strong> (2.6%) and <strong>Reference</strong> (23.4%) account for the remainder. Brands with citations across multiple types have the most durable AI visibility profiles.</p>
+        <table class="source-table"><tr><td>forbes.com</td><td>372 citations</td></tr><tr><td>banksout.com</td><td>139 citations</td></tr><tr><td>finance.yahoo.com</td><td>83 citations</td></tr><tr><td>rategrove.com</td><td>51 citations</td></tr><tr><td>financeadvisorfree.com</td><td>48 citations</td></tr><tr><td>finder.com</td><td>21 citations</td></tr><tr><td>chime.com</td><td>20 citations</td></tr><tr><td>neobanks.app</td><td>15 citations</td></tr></table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sub-section">
+    <div class="sub-label">3C / Owned Media</div>
+    <div class="sub-title">How Brand-Controlled Content Influences AI Responses</div>
+    <p class="sub-intro">
+      73 citations (8.7% of total) reference content
+      owned and controlled directly by brands. Understanding which content types drive
+      these citations reveals where owned content investment creates AI visibility.
+    </p>
+    <div class="two-col">
+      <div>
+        <div class="chart-wrap">
+          <div class="chart-title">Owned Content by Type</div>
+          <div>                            <div id="19417583-bfa5-4f6d-9068-d9db50502464" class="plotly-graph-div" style="height:280px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("19417583-bfa5-4f6d-9068-d9db50502464")) {                    Plotly.newPlot(                        "19417583-bfa5-4f6d-9068-d9db50502464",                        [{"hovertemplate":"\u003cb\u003e%{y}\u003c\u002fb\u003e\u003cbr\u003eCitations: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#FF6B35"]},"orientation":"h","text":["73"],"textfont":{"color":"#8A8A8A","size":11},"textposition":"outside","x":[73],"y":["Owned Blog"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"font":{"family":"Nunito Sans, sans-serif","color":"#FFFFFF","size":13},"hoverlabel":{"font":{"family":"Nunito Sans","color":"#FFFFFF","size":13},"bgcolor":"#272727","bordercolor":"rgba(255,255,255,0.1)"},"xaxis":{"tickfont":{"color":"#8A8A8A"},"showgrid":true,"gridcolor":"rgba(255,255,255,0.06)","zeroline":false},"yaxis":{"tickfont":{"color":"#FFFFFF","size":12},"showgrid":false},"paper_bgcolor":"#000000","plot_bgcolor":"#1a1a1a","height":280,"bargap":0.4},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div>
+        </div>
+      </div>
+      <div>
+        <p class="narrative">
+          The brand with the strongest owned media citation rate in this analysis is
+          <strong>Chime</strong> — suggesting a content infrastructure
+          well-aligned with the questions AI models are answering.
+        </p>
+        <p class="narrative">
+          Brands seeking to strengthen owned media citation should prioritize answer-first
+          content formats: FAQ pages, structured how-to articles, and resource guides that
+          directly address the query patterns in this report's prompt cluster map.
+        </p>
+        <table class="source-table"><tr><td>Owned Blog</td><td>73 citations (100.0%)</td></tr></table>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sub-section">
+    <div class="sub-label">3D / Technical Optimization</div>
+    <div class="sub-title">How Technical Quality Correlates with AI Visibility</div>
+    <p class="sub-intro">
+      Beyond content and earned media, technical factors influence how consistently
+      brands are cited — and where in an AI response they appear.
+    </p>
+    <p class="narrative">
+      Citation position (where in a response a brand is mentioned) serves as a proxy
+      for technical visibility quality. Brands cited earlier — in position 1 or 2 —
+      tend to have stronger technical signals: cleaner site structure, faster performance,
+      better schema markup, and more comprehensive entity recognition.
+    </p>
+    <p class="narrative">
+      <strong>Albert</strong> leads on average
+      citation position in this analysis — suggesting strong technical optimization
+      supporting its AI visibility profile.
+    </p>
+    
+        <table class="source-table" style="margin-top:24px">
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="color:var(--muted);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">BRAND</td>
+            <td style="color:var(--muted);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase">CITATIONS</td>
+            <td style="color:var(--muted);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-align:right">AVG POSITION</td>
+          </tr>
+          
+            <tr>
+              <td class="brand-name">Albert</td>
+              <td><span class="cite-count">3</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Wells Fargo</td>
+              <td><span class="cite-count">23</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Wealthfront</td>
+              <td><span class="cite-count">15</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">WeBank</td>
+              <td><span class="cite-count">3</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Varo</td>
+              <td><span class="cite-count">70</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Upgrade</td>
+              <td><span class="cite-count">8</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Synchrony Bank</td>
+              <td><span class="cite-count">15</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Starling Bank</td>
+              <td><span class="cite-count">7</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">SoFi</td>
+              <td><span class="cite-count">70</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+            <tr>
+              <td class="brand-name">Revolut</td>
+              <td><span class="cite-count">27</span></td>
+              <td><span class="sov-pct">1.0</span></td>
+            </tr>
+        </table>
+    <div class="insight-box" style="margin-top:24px">
+      <strong>Key technical factors</strong> correlated with strong AI visibility:
+      schema markup (Organization, Product, FAQ), Wikipedia entity presence,
+      Google Knowledge Panel accuracy, page load performance, and structured data
+      on key landing pages.
+    </div>
+  </div>
+  
+  <div class="sub-section">
+    <div class="sub-label">3E / General Trends</div>
+    <div class="sub-title">Patterns and Strategic Insights from the Data</div>
+    <p class="sub-intro">
+      Cross-sectional patterns observed across brands, topic clusters, and citation types
+      in the Fintech: Digital Banks AI visibility dataset.
+    </p>
+    <div class="trends-list">
+      <div class="trend-item">
+        <div class="trend-num">Trend 1</div>
+        <div class="trend-title">AI visibility is still contestable in this category</div>
+        <div class="trend-insight">The top 5 brands hold 41.0% of AI citations — more distributed than typical mature categories. No single brand has locked in dominant position.</div>
+        <div class="trend-implication">This is a genuine window of opportunity. Brands that invest in AEO now can enter the top tier before the category concentrates. The first-mover advantage in AI visibility is real — and temporary.</div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">Trend 2</div>
+        <div class="trend-title">PR and earned media are the primary drivers of AI visibility</div>
+        <div class="trend-insight">91.3% of all AI citations reference earned media — editorial coverage, third-party references, and authoritative external sources. AI models calibrate trust based on what credible third parties say about a brand, not what the brand says about itself.</div>
+        <div class="trend-implication">Every PR placement in a credible outlet is an AI visibility asset. Brands that treat PR and AEO as separate disciplines are leaving significant visibility on the table. The most efficient path to AI citation is authoritative third-party coverage — not more owned content.</div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">Trend 3</div>
+        <div class="trend-title">Broad topical authority drives consistent AI citation</div>
+        <div class="trend-insight">The category leader appears in 97.3% of all prompts analyzed — demonstrating authority across the full range of buyer questions, not just a few high-volume queries. Breadth of topic coverage is a key differentiator between leaders and challengers.</div>
+        <div class="trend-implication">Brands optimizing for a narrow set of keywords or topics are limiting their AI visibility ceiling. A comprehensive content and PR strategy that addresses the full topic cluster map — including long-tail and comparison queries — is required to compete at the top tier.</div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">Trend 4</div>
+        <div class="trend-title">The bottom half of the market is effectively invisible to AI</div>
+        <div class="trend-insight">The bottom 24 brands in this analysis share only 7.1% of AI citations between them. For most brands in this category, AI visibility is not low — it is absent.</div>
+        <div class="trend-implication">AI visibility follows a power law. There is no middle — brands are either building citation authority or they are invisible. Modest effort produces modest results. The brands that break into the top tier are making systematic, sustained AEO investments across earned media, owned content, and technical optimization simultaneously.</div>
+      </div>
+      <div class="trend-item">
+        <div class="trend-num">Trend 5</div>
+        <div class="trend-title">&#x27;Mobile Banks&#x27; queries drive the most AI citations</div>
+        <div class="trend-insight">The &#x27;Mobile Banks&#x27; topic cluster accounts for 28.1% of citation activity — the highest of any cluster analyzed. Brands with strong positioning in this topic cluster benefit disproportionately across the query landscape.</div>
+        <div class="trend-implication">Topic cluster weighting is not uniform. Understanding which question categories drive the most AI activity in your industry — and ensuring you have authoritative coverage of those clusters — is a higher-leverage investment than generic content volume.</div>
+      </div></div>
+  </div>
+  <div class="grad-divider"></div>
+</section>
+    
+<section id="section-4" class="section">
+  <div class="section-label">04 / Year-Over-Year</div>
+  <h2 class="section-title">Winners &amp; Losers: The Baseline Report</h2>
+  <p class="section-intro">
+    This is the inaugural AIVx Fintech: Digital Banks report. No prior-year data exists yet —
+    which means this edition defines the baseline. Every future ranking movement
+    will be measured against what you see here.
+  </p>
+  <div class="insight-box">
+    <strong>Why this matters:</strong> The brands ranked here today are establishing
+    citation authority before the competitive window narrows. AI visibility compounds —
+    brands cited consistently today will be harder to displace six months from now.
+    The brands not on this list have a shrinking window to change that.
+  </div>
+  <p class="narrative" style="margin-bottom:8px">Visibility is relatively distributed, creating real opportunity for brands currently outside the top 5 to break in with focused effort.</p>
+  <div class="leaderboard-wrap" style="margin-top:24px">
+    <table class="leaderboard">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Brand</th>
+          <th>AI Visibility</th>
+          <th>Citations</th>
+          <th>Tier</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td><span class="rank-num top3">1</span></td>
+              <td class="brand-name">Chime</td>
+              <td><span class="sov-pct">8.7%</span></td>
+              <td><span class="cite-count">73</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num top3">2</span></td>
+              <td class="brand-name">SoFi</td>
+              <td><span class="sov-pct">8.3%</span></td>
+              <td><span class="cite-count">70</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num top3">3</span></td>
+              <td class="brand-name">Varo</td>
+              <td><span class="sov-pct">8.3%</span></td>
+              <td><span class="cite-count">70</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">4</span></td>
+              <td class="brand-name">Ally</td>
+              <td><span class="sov-pct">8.1%</span></td>
+              <td><span class="cite-count">68</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">5</span></td>
+              <td class="brand-name">Current</td>
+              <td><span class="sov-pct">7.6%</span></td>
+              <td><span class="cite-count">64</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">6</span></td>
+              <td class="brand-name">Capital One</td>
+              <td><span class="sov-pct">7.5%</span></td>
+              <td><span class="cite-count">63</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">7</span></td>
+              <td class="brand-name">Discover</td>
+              <td><span class="sov-pct">6.6%</span></td>
+              <td><span class="cite-count">56</span></td>
+              <td><span class="badge badge-leader">Leader</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">8</span></td>
+              <td class="brand-name">Axos Bank</td>
+              <td><span class="sov-pct">5.1%</span></td>
+              <td><span class="cite-count">43</span></td>
+              <td><span class="badge badge-challenger">Challenger</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">9</span></td>
+              <td class="brand-name">Chase</td>
+              <td><span class="sov-pct">4.4%</span></td>
+              <td><span class="cite-count">37</span></td>
+              <td><span class="badge badge-challenger">Challenger</span></td>
+            </tr>
+            <tr>
+              <td><span class="rank-num ">10</span></td>
+              <td class="brand-name">Nota</td>
+              <td><span class="sov-pct">4.0%</span></td>
+              <td><span class="cite-count">34</span></td>
+              <td><span class="badge badge-challenger">Challenger</span></td>
+            </tr></tbody>
+    </table>
+  </div>
+  <div class="sub-section">
+    <div class="sub-label">What to watch</div>
+    <div class="sub-title">Brands to Monitor in the Next Report Cycle</div>
+    <p class="narrative">
+      <strong>Chime</strong> enters the first AIVx Fintech: Digital Banks report as the
+      category leader with 8.7% AI share of voice. The central question for the
+      next report cycle: does this lead hold, or do challengers close the gap?
+    </p>
+    <p class="narrative">
+      Watch for brands currently in positions 4 through 8 — they are close enough to
+      challenge the top 3 but far enough back that any slip in content or earned media
+      activity could push them further down. The Developing-tier brands represent the
+      most volatile segment: small changes in citation volume will produce large shifts
+      in rank from here.
+    </p>
+    <div class="method-note">
+      Year-over-year comparison will be available when a prior AIVx Fintech: Digital Banks report
+      is supplied as input. The agent will automatically identify rank risers, rank
+      decliners, new entrants, and brands that fell off the leaderboard entirely.
+    </div>
+  </div>
+  <div class="grad-divider"></div>
+</section>
+    
+<section id="section-5" class="section">
+  <div class="section-label">05 / Recommendations</div>
+  <h2 class="section-title">What Brands in Fintech: Digital Banks Need To Do Next</h2>
+  <p class="section-intro">
+    Five prioritized, data-grounded actions. Sequenced for maximum first-move impact.
+    Start with #1. Each action compounds the one before it.
+  </p>
+  <div class="priority-cards">
+      <div class="priority-card">
+        <div class="priority-num">1</div>
+        <div class="priority-body">
+          <div class="priority-title">Build Earned Media as Your Primary AI Visibility Engine</div>
+          <div class="priority-why">91.3% of AI citations in this dataset come from earned sources. Editorial coverage in authoritative outlets is the single highest-leverage action a brand can take to improve AI visibility.</div>
+          <div class="priority-what">forbes.com, banksout.com, and finance.yahoo.com are the top citation sources in this dataset — these are the outlets to prioritize for PR and editorial outreach. Build a dedicated strategy targeting these publications specifically. Secure placements that position your brand as an authoritative industry voice, not just product coverage.</div>
+          <div class="priority-meta">
+            <span class="priority-owner">PR / Communications</span>
+            &nbsp;·&nbsp;
+            <span class="badge badge-challenger">This quarter</span>
+          </div>
+        </div>
+      </div>
+      <div class="priority-card">
+        <div class="priority-num">2</div>
+        <div class="priority-body">
+          <div class="priority-title">Restructure Key Content Pages for Answer-Engine Format</div>
+          <div class="priority-why">8.7% of AI citations in this dataset reference brand-owned content. Chime leads all brands with the highest owned citation rate — demonstrating that well-structured, answer-first content is cited directly by AI models. Most brand content is built to persuade, not to inform, which actively reduces citation probability regardless of volume.</div>
+          <div class="priority-what">Audit your top 20 organic landing pages and resource articles. Rewrite for answer-first format: question-based H2 headings, direct answers in the opening paragraph, factual claims with attributable sources. Add FAQ schema markup to every restructured page.</div>
+          <div class="priority-meta">
+            <span class="priority-owner">Content / SEO</span>
+            &nbsp;·&nbsp;
+            <span class="badge badge-challenger">This quarter</span>
+          </div>
+        </div>
+      </div>
+      <div class="priority-card">
+        <div class="priority-num">3</div>
+        <div class="priority-body">
+          <div class="priority-title">Map Your Content and PR to the Topic Cluster Map in This Report</div>
+          <div class="priority-why">AI citations are distributed unevenly across the 5 topic clusters in this analysis. &#x27;Mobile Banks&#x27; alone drives 28.1% of citation activity. Brands with no coverage in high-volume clusters are completely invisible to that share of buyer queries.</div>
+          <div class="priority-what">Use the topic clusters in this report as your content and PR brief. &#x27;Mobile Banks&#x27; is the highest-activity cluster in this dataset — authoritative coverage there is the single highest-leverage content investment. For every cluster where your brand appears fewer than 3 times: create one owned piece and pursue one editorial placement. Treat each cluster as a distinct visibility campaign.</div>
+          <div class="priority-meta">
+            <span class="priority-owner">Content / Marketing</span>
+            &nbsp;·&nbsp;
+            <span class="badge badge-emerging">Next 6 months</span>
+          </div>
+        </div>
+      </div>
+      <div class="priority-card">
+        <div class="priority-num">4</div>
+        <div class="priority-body">
+          <div class="priority-title">Implement Entity Markup and Structured Data Across Core Pages</div>
+          <div class="priority-why">Technical signals — schema markup, entity recognition, structured data — help AI models identify and trust your brand as a category authority. Albert leads this dataset on citation positioning, appearing earlier in AI responses than any other brand analyzed. Brands with strong technical optimization show better citation consistency across all prompt types.</div>
+          <div class="priority-what">Study Albert&#x27;s technical footprint — they are the current benchmark for citation positioning in this category. Add Organization, Product, and FAQ schema to all key pages. Verify your brand&#x27;s Wikipedia entry exists and is accurate. Confirm your Google Knowledge Panel is claimed and complete. Run a schema validation audit and fix all errors.</div>
+          <div class="priority-meta">
+            <span class="priority-owner">Development / SEO</span>
+            &nbsp;·&nbsp;
+            <span class="badge badge-challenger">This quarter</span>
+          </div>
+        </div>
+      </div>
+      <div class="priority-card">
+        <div class="priority-num">5</div>
+        <div class="priority-body">
+          <div class="priority-title">Establish Monthly AI Visibility Tracking Before Your Competitors Do</div>
+          <div class="priority-why">You cannot optimize what you do not measure. The 48 brands in this analysis are your competitive set in AI. Brands that begin tracking now will have 6-12 months of directional data before the category standardizes on AI visibility as a KPI.</div>
+          <div class="priority-what">Set up a Peec workspace for your brand and benchmark it against Chime, SoFi, Varo, Ally, and Current — the current AI visibility leaders in this analysis. Run the AIVx report on a monthly cadence. Track: overall rank, SOV%, prompt coverage %, and tier classification. Treat AI visibility as a core marketing KPI alongside organic search rank.</div>
+          <div class="priority-meta">
+            <span class="priority-owner">Marketing / Analytics</span>
+            &nbsp;·&nbsp;
+            <span class="badge badge-leader">Immediate</span>
+          </div>
+        </div>
+      </div></div>
+  <div class="grad-divider"></div>
+</section>
+    
+<section class="section" style="text-align:center;background:linear-gradient(180deg,#080808 0%,#000000 100%);border-bottom:none">
+  <div style="max-width:660px;margin:0 auto;padding:32px 0">
+    <div class="section-label" style="text-align:center;margin-bottom:20px">Request a Custom Report</div>
+    <h2 style="font-size:clamp(32px,4.5vw,52px);font-weight:900;line-height:1.1;color:var(--white);margin-bottom:24px">
+      How does your brand stack up<br>in AI Search?
+    </h2>
+    <p style="font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:40px;max-width:560px;margin-left:auto;margin-right:auto">
+      Request a custom AI Search Visibility Report to see where you stand,
+      what&rsquo;s driving your visibility &mdash; or holding it back &mdash; and how to close the gap.
+      Tailored insights and actionable strategies built around your brand, your sector,
+      and your competitive landscape.
+    </p>
+    <a href="https://avenuez.com/ai-report" target="_blank" rel="noopener"
+       style="display:inline-block;padding:16px 44px;border:2px solid rgba(255,255,255,0.8);border-radius:9999px;color:var(--white);text-decoration:none;font-size:15px;font-weight:800;letter-spacing:0.04em;transition:border-color 0.2s,color 0.2s">
+      Visit&nbsp; <strong style="color:var(--cyan)">AvenueZ.com/ai-report</strong>
+    </a>
+  </div>
+</section>
+    
+<footer class="footer">
+  <div class="footer-grad-line"></div>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="avz-name">Avenue Z</div>
+      <p class="footer-desc">
+        Avenue Z is a digital marketing and PR agency specializing in AI visibility
+        and Answer Engine Optimization (AEO). We help brands earn citation authority
+        with AI models through earned media, content strategy, and technical optimization.
+      </p>
+      <a class="footer-link" href="https://avenuez.com" target="_blank" rel="noopener">
+        avenuez.com ↗
+      </a>
+    </div>
+    <div>
+      <p style="font-size:12px;color:var(--muted);font-weight:700;margin-bottom:6px">
+        AIVx REPORT SERIES
+      </p>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5)">
+        Fintech: Digital Banks<br>May 2026
+      </p>
+    </div>
+  </div>
+  <p class="footer-disclaimer">
+    This report was generated by the Avenue Z AIVx Report Agent.
+    Citation data reflects AI model behavior during a 7-day collection window.
+    All market research statistics are sourced from publicly available industry reports
+    and are subject to change. Avenue Z makes no representations about future AI visibility
+    outcomes. Data is provided for strategic planning purposes only.
+  </p>
+</footer>
+  </div>
+  <script>
+(function() {
+  // Active nav state on scroll
+  const sections = document.querySelectorAll('.section[id]');
+  const navLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+
+  function updateNav() {
+    let current = '';
+    sections.forEach(function(section) {
+      const top = section.getBoundingClientRect().top;
+      if (top <= 120) current = section.getAttribute('id');
+    });
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+})();
+</script>
+</body>
+</html>
