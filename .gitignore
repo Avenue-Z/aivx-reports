@@ -1,2 +1,8 @@
 .claude/
 .DS_Store
+
+# Agent — secrets and generated files (never commit these)
+agent/.env
+agent/peec_mapped.csv
+agent/__pycache__/
+agent/*.pyc

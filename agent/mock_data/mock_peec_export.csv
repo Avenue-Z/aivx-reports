@@ -1,0 +1,264 @@
+prompt_id,prompt_text,topic_cluster,platform,brand,cited_url,media_type,is_owned,citation_rank
+P001,What are the best payment processors for online businesses?,payment_processing,ChatGPT,Stripe,https://stripe.com/blog/payment-processing,landing_page,1,1
+P001,What are the best payment processors for online businesses?,payment_processing,ChatGPT,Square,https://reddit.com/article/square-payment-processing,ugc,0,2
+P002,How do payment gateways work?,payment_processing,ChatGPT,Adyen,https://nerdwallet.com/article/adyen-payment-processing,reference,0,1
+P002,How do payment gateways work?,payment_processing,ChatGPT,Stripe,https://forbes.com/article/stripe-payment-processing,editorial,0,2
+P002,How do payment gateways work?,payment_processing,ChatGPT,PayPal,https://venturebeat.com/article/paypal-payment-processing,editorial,0,3
+P002,How do payment gateways work?,payment_processing,ChatGPT,Klarna,https://wired.com/article/klarna-payment-processing,editorial,0,4
+P003,What payment processor has the lowest fees?,payment_processing,ChatGPT,Stripe,https://investopedia.com/article/stripe-payment-processing,reference,0,1
+P004,What is the difference between a payment gateway and a payment processor?,payment_processing,ChatGPT,Klarna,https://stackexchange.com/article/klarna-payment-processing,ugc,0,1
+P004,What is the difference between a payment gateway and a payment processor?,payment_processing,ChatGPT,Stax,https://staxpayments.com/blog/payment-processing,blog,1,2
+P004,What is the difference between a payment gateway and a payment processor?,payment_processing,ChatGPT,Adyen,https://investopedia.com/article/adyen-payment-processing,reference,0,3
+P004,What is the difference between a payment gateway and a payment processor?,payment_processing,ChatGPT,Checkout.com,https://quora.com/article/checkout.com-payment-processing,ugc,0,4
+P004,What is the difference between a payment gateway and a payment processor?,payment_processing,ChatGPT,Cash App,https://cash.app/pricing/payment-processing,landing_page,1,5
+P005,Which payment processor is best for SaaS companies?,payment_processing,ChatGPT,Square,https://g2.com/article/square-payment-processing,reference,0,1
+P005,Which payment processor is best for SaaS companies?,payment_processing,ChatGPT,PayPal,https://nerdwallet.com/article/paypal-payment-processing,reference,0,2
+P006,How do I accept credit card payments on my website?,payment_processing,ChatGPT,Adyen,https://wired.com/article/adyen-payment-processing,editorial,0,1
+P006,How do I accept credit card payments on my website?,payment_processing,ChatGPT,Square,https://nerdwallet.com/article/square-payment-processing,reference,0,2
+P006,How do I accept credit card payments on my website?,payment_processing,ChatGPT,Marqeta,https://pcmag.com/article/marqeta-payment-processing,reference,0,3
+P007,What is the best API for payment processing?,payment_processing,ChatGPT,Stripe,https://stripe.com/docs/payment-processing,product,1,1
+P007,What is the best API for payment processing?,payment_processing,ChatGPT,Google Pay,https://nerdwallet.com/article/google-pay-payment-processing,reference,0,2
+P007,What is the best API for payment processing?,payment_processing,ChatGPT,Checkout.com,https://checkout.com/pricing/payment-processing,blog,1,3
+P007,What is the best API for payment processing?,payment_processing,ChatGPT,Wise,https://venturebeat.com/article/wise-payment-processing,editorial,0,4
+P008,How do I reduce payment processing fees?,payment_processing,ChatGPT,PayPal,https://paypal.com/features/payment-processing,blog,1,1
+P008,How do I reduce payment processing fees?,payment_processing,ChatGPT,Authorize.net,https://pcmag.com/article/authorize.net-payment-processing,reference,0,2
+P008,How do I reduce payment processing fees?,payment_processing,ChatGPT,Klarna,https://cnbc.com/article/klarna-payment-processing,editorial,0,3
+P008,How do I reduce payment processing fees?,payment_processing,ChatGPT,Stripe,https://reddit.com/article/stripe-payment-processing,ugc,0,4
+P009,What payment processors support recurring billing?,payment_processing,ChatGPT,Wise,https://wise.com/pricing/payment-processing,landing_page,1,1
+P009,What payment processors support recurring billing?,payment_processing,ChatGPT,Klarna,https://klarna.com/features/payment-processing,product,1,2
+P010,How does payment tokenization work?,payment_processing,ChatGPT,Stripe,https://nytimes.com/article/stripe-payment-processing,editorial,0,1
+P010,How does payment tokenization work?,payment_processing,ChatGPT,Braintree,https://nerdwallet.com/article/braintree-payment-processing,reference,0,2
+P010,How does payment tokenization work?,payment_processing,ChatGPT,Stax,https://staxpayments.com/blog/payment-processing,blog,1,3
+P011,What are the top enterprise payment platforms?,payment_processing,ChatGPT,Square,https://squareup.com/blog/payment-processing,landing_page,1,1
+P011,What are the top enterprise payment platforms?,payment_processing,ChatGPT,Stripe,https://stripe.com/blog/payment-processing,product,1,2
+P011,What are the top enterprise payment platforms?,payment_processing,ChatGPT,Marqeta,https://nerdwallet.com/article/marqeta-payment-processing,reference,0,3
+P011,What are the top enterprise payment platforms?,payment_processing,ChatGPT,Apple Pay,https://apple.com/features/payment-processing,product,1,4
+P011,What are the top enterprise payment platforms?,payment_processing,ChatGPT,Cash App,https://cash.app/docs/payment-processing,landing_page,1,5
+P012,How do I set up payment processing for my startup?,payment_processing,ChatGPT,Marqeta,https://wired.com/article/marqeta-payment-processing,editorial,0,1
+P012,How do I set up payment processing for my startup?,payment_processing,ChatGPT,Braintree,https://investopedia.com/article/braintree-payment-processing,reference,0,2
+P012,How do I set up payment processing for my startup?,payment_processing,ChatGPT,Wise,https://wise.com/pricing/payment-processing,blog,1,3
+P013,What payment processor does Shopify use?,payment_processing,ChatGPT,Checkout.com,https://checkout.com/blog/payment-processing,blog,1,1
+P013,What payment processor does Shopify use?,payment_processing,ChatGPT,PayPal,https://paypal.com/pricing/payment-processing,blog,1,2
+P014,How do I accept international credit cards online?,payment_processing,ChatGPT,Klarna,https://capterra.com/article/klarna-payment-processing,reference,0,1
+P014,How do I accept international credit cards online?,payment_processing,ChatGPT,Square,https://pcmag.com/article/square-payment-processing,reference,0,2
+P015,What is a payment orchestration platform?,payment_processing,ChatGPT,Worldpay,https://worldpay.com/pricing/payment-processing,product,1,1
+P015,What is a payment orchestration platform?,payment_processing,ChatGPT,Cash App,https://forbes.com/article/cash-app-payment-processing,editorial,0,2
+P015,What is a payment orchestration platform?,payment_processing,ChatGPT,PayPal,https://reddit.com/article/paypal-payment-processing,ugc,0,3
+P016,What is the best checkout experience for e-commerce?,ecommerce_checkout,ChatGPT,Adyen,https://businessinsider.com/article/adyen-ecommerce-checkout,editorial,0,1
+P016,What is the best checkout experience for e-commerce?,ecommerce_checkout,ChatGPT,Square,https://wsj.com/article/square-ecommerce-checkout,editorial,0,2
+P017,How do I reduce shopping cart abandonment?,ecommerce_checkout,ChatGPT,Adyen,https://forbes.com/article/adyen-ecommerce-checkout,editorial,0,1
+P017,How do I reduce shopping cart abandonment?,ecommerce_checkout,ChatGPT,Apple Pay,https://reddit.com/article/apple-pay-ecommerce-checkout,ugc,0,2
+P017,How do I reduce shopping cart abandonment?,ecommerce_checkout,ChatGPT,Stripe,https://stripe.com/docs/ecommerce-checkout,product,1,3
+P017,How do I reduce shopping cart abandonment?,ecommerce_checkout,ChatGPT,Cash App,https://cash.app/blog/ecommerce-checkout,product,1,4
+P018,What payment options should I offer at checkout?,ecommerce_checkout,ChatGPT,Adyen,https://venturebeat.com/article/adyen-ecommerce-checkout,editorial,0,1
+P018,What payment options should I offer at checkout?,ecommerce_checkout,ChatGPT,WooPayments,https://g2.com/article/woopayments-ecommerce-checkout,reference,0,2
+P018,What payment options should I offer at checkout?,ecommerce_checkout,ChatGPT,Square,https://businessinsider.com/article/square-ecommerce-checkout,editorial,0,3
+P019,How does one-click checkout work?,ecommerce_checkout,ChatGPT,PayPal,https://cnbc.com/article/paypal-ecommerce-checkout,editorial,0,1
+P019,How does one-click checkout work?,ecommerce_checkout,ChatGPT,Stripe,https://reddit.com/article/stripe-ecommerce-checkout,ugc,0,2
+P019,How does one-click checkout work?,ecommerce_checkout,ChatGPT,Braintree,https://braintreegateway.com/blog/ecommerce-checkout,landing_page,1,3
+P020,What is the best buy now pay later option for e-commerce?,ecommerce_checkout,ChatGPT,Stripe,https://stackexchange.com/article/stripe-ecommerce-checkout,ugc,0,1
+P020,What is the best buy now pay later option for e-commerce?,ecommerce_checkout,ChatGPT,Venmo,https://venmo.com/blog/ecommerce-checkout,landing_page,1,2
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,Stripe,https://wsj.com/article/stripe-ecommerce-checkout,editorial,0,1
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,Affirm,https://wired.com/article/affirm-ecommerce-checkout,editorial,0,2
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,Checkout.com,https://reddit.com/article/checkout.com-ecommerce-checkout,ugc,0,3
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,Square,https://reddit.com/article/square-ecommerce-checkout,ugc,0,4
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,PayPal,https://paypal.com/pricing/ecommerce-checkout,blog,1,5
+P021,How do I add Apple Pay and Google Pay to my checkout?,ecommerce_checkout,ChatGPT,Wise,https://wise.com/blog/ecommerce-checkout,product,1,6
+P022,What is an embedded checkout?,ecommerce_checkout,ChatGPT,Square,https://capterra.com/article/square-ecommerce-checkout,reference,0,1
+P022,What is an embedded checkout?,ecommerce_checkout,ChatGPT,PayPal,https://g2.com/article/paypal-ecommerce-checkout,reference,0,2
+P022,What is an embedded checkout?,ecommerce_checkout,ChatGPT,Cash App,https://nerdwallet.com/article/cash-app-ecommerce-checkout,reference,0,3
+P023,How do I optimize my checkout conversion rate?,ecommerce_checkout,ChatGPT,Stripe,https://nerdwallet.com/article/stripe-ecommerce-checkout,reference,0,1
+P023,How do I optimize my checkout conversion rate?,ecommerce_checkout,ChatGPT,Checkout.com,https://stackexchange.com/article/checkout.com-ecommerce-checkout,ugc,0,2
+P023,How do I optimize my checkout conversion rate?,ecommerce_checkout,ChatGPT,Square,https://reddit.com/article/square-ecommerce-checkout,ugc,0,3
+P024,What checkout features do customers expect in 2025?,ecommerce_checkout,ChatGPT,Affirm,https://affirm.com/features/ecommerce-checkout,product,1,1
+P024,What checkout features do customers expect in 2025?,ecommerce_checkout,ChatGPT,Cash App,https://cnbc.com/article/cash-app-ecommerce-checkout,editorial,0,2
+P025,How does Stripe Checkout compare to Braintree?,ecommerce_checkout,ChatGPT,Wise,https://wise.com/features/ecommerce-checkout,product,1,1
+P025,How does Stripe Checkout compare to Braintree?,ecommerce_checkout,ChatGPT,Checkout.com,https://wired.com/article/checkout.com-ecommerce-checkout,editorial,0,2
+P025,How does Stripe Checkout compare to Braintree?,ecommerce_checkout,ChatGPT,Stripe,https://investopedia.com/article/stripe-ecommerce-checkout,reference,0,3
+P025,How does Stripe Checkout compare to Braintree?,ecommerce_checkout,ChatGPT,Chime,https://businessinsider.com/article/chime-ecommerce-checkout,editorial,0,4
+P025,How does Stripe Checkout compare to Braintree?,ecommerce_checkout,ChatGPT,PayPal,https://venturebeat.com/article/paypal-ecommerce-checkout,editorial,0,5
+P026,What is the best payment solution for WooCommerce?,ecommerce_checkout,ChatGPT,Braintree,https://wired.com/article/braintree-ecommerce-checkout,editorial,0,1
+P026,What is the best payment solution for WooCommerce?,ecommerce_checkout,ChatGPT,Marqeta,https://businessinsider.com/article/marqeta-ecommerce-checkout,editorial,0,2
+P026,What is the best payment solution for WooCommerce?,ecommerce_checkout,ChatGPT,PayPal,https://paypal.com/blog/ecommerce-checkout,landing_page,1,3
+P026,What is the best payment solution for WooCommerce?,ecommerce_checkout,ChatGPT,Worldpay,https://cnbc.com/article/worldpay-ecommerce-checkout,editorial,0,4
+P027,How do I set up split payments at checkout?,ecommerce_checkout,ChatGPT,PayPal,https://reddit.com/article/paypal-ecommerce-checkout,ugc,0,1
+P027,How do I set up split payments at checkout?,ecommerce_checkout,ChatGPT,Marqeta,https://marqeta.com/docs/ecommerce-checkout,blog,1,2
+P027,How do I set up split payments at checkout?,ecommerce_checkout,ChatGPT,Square,https://quora.com/article/square-ecommerce-checkout,ugc,0,3
+P028,What is 3D Secure and do I need it?,ecommerce_checkout,ChatGPT,Affirm,https://nytimes.com/article/affirm-ecommerce-checkout,editorial,0,1
+P028,What is 3D Secure and do I need it?,ecommerce_checkout,ChatGPT,Adyen,https://adyen.com/blog/ecommerce-checkout,product,1,2
+P028,What is 3D Secure and do I need it?,ecommerce_checkout,ChatGPT,Stax,https://staxpayments.com/pricing/ecommerce-checkout,product,1,3
+P028,What is 3D Secure and do I need it?,ecommerce_checkout,ChatGPT,Klarna,https://techcrunch.com/article/klarna-ecommerce-checkout,editorial,0,4
+P029,How do I accept cryptocurrency at checkout?,ecommerce_checkout,ChatGPT,Google Pay,https://capterra.com/article/google-pay-ecommerce-checkout,reference,0,1
+P029,How do I accept cryptocurrency at checkout?,ecommerce_checkout,ChatGPT,PayPal,https://venturebeat.com/article/paypal-ecommerce-checkout,editorial,0,2
+P029,How do I accept cryptocurrency at checkout?,ecommerce_checkout,ChatGPT,Stripe,https://stripe.com/pricing/ecommerce-checkout,landing_page,1,3
+P029,How do I accept cryptocurrency at checkout?,ecommerce_checkout,ChatGPT,Adyen,https://investopedia.com/article/adyen-ecommerce-checkout,reference,0,4
+P029,How do I accept cryptocurrency at checkout?,ecommerce_checkout,ChatGPT,Klarna,https://nytimes.com/article/klarna-ecommerce-checkout,editorial,0,5
+P030,What checkout solution works best for subscription businesses?,ecommerce_checkout,ChatGPT,Square,https://nerdwallet.com/article/square-ecommerce-checkout,reference,0,1
+P030,What checkout solution works best for subscription businesses?,ecommerce_checkout,ChatGPT,Wise,https://forbes.com/article/wise-ecommerce-checkout,editorial,0,2
+P030,What checkout solution works best for subscription businesses?,ecommerce_checkout,ChatGPT,Checkout.com,https://wired.com/article/checkout.com-ecommerce-checkout,editorial,0,3
+P030,What checkout solution works best for subscription businesses?,ecommerce_checkout,ChatGPT,PayPal,https://businessinsider.com/article/paypal-ecommerce-checkout,editorial,0,4
+P030,What checkout solution works best for subscription businesses?,ecommerce_checkout,ChatGPT,Affirm,https://capterra.com/article/affirm-ecommerce-checkout,reference,0,5
+P031,How do I accept payments from international customers?,international_payments,ChatGPT,Affirm,https://businessinsider.com/article/affirm-international-payments,editorial,0,1
+P031,How do I accept payments from international customers?,international_payments,ChatGPT,Square,https://businessinsider.com/article/square-international-payments,editorial,0,2
+P032,What is the best way to send money internationally for businesses?,international_payments,ChatGPT,Stripe,https://venturebeat.com/article/stripe-international-payments,editorial,0,1
+P032,What is the best way to send money internationally for businesses?,international_payments,ChatGPT,PayPal,https://capterra.com/article/paypal-international-payments,reference,0,2
+P032,What is the best way to send money internationally for businesses?,international_payments,ChatGPT,Klarna,https://businessinsider.com/article/klarna-international-payments,editorial,0,3
+P033,Which payment processor has the best currency conversion rates?,international_payments,ChatGPT,Affirm,https://venturebeat.com/article/affirm-international-payments,editorial,0,1
+P033,Which payment processor has the best currency conversion rates?,international_payments,ChatGPT,Stripe,https://stripe.com/docs/international-payments,landing_page,1,2
+P033,Which payment processor has the best currency conversion rates?,international_payments,ChatGPT,Braintree,https://braintreegateway.com/blog/international-payments,blog,1,3
+P034,How does Wise compare to traditional bank transfers?,international_payments,ChatGPT,Stripe,https://venturebeat.com/article/stripe-international-payments,editorial,0,1
+P034,How does Wise compare to traditional bank transfers?,international_payments,ChatGPT,Klarna,https://nerdwallet.com/article/klarna-international-payments,reference,0,2
+P034,How does Wise compare to traditional bank transfers?,international_payments,ChatGPT,Checkout.com,https://nytimes.com/article/checkout.com-international-payments,editorial,0,3
+P034,How does Wise compare to traditional bank transfers?,international_payments,ChatGPT,Square,https://bankrate.com/article/square-international-payments,reference,0,4
+P035,What is the best multi-currency payment solution?,international_payments,ChatGPT,Klarna,https://wsj.com/article/klarna-international-payments,editorial,0,1
+P035,What is the best multi-currency payment solution?,international_payments,ChatGPT,PayPal,https://paypal.com/features/international-payments,landing_page,1,2
+P035,What is the best multi-currency payment solution?,international_payments,ChatGPT,Adyen,https://venturebeat.com/article/adyen-international-payments,editorial,0,3
+P035,What is the best multi-currency payment solution?,international_payments,ChatGPT,Wise,https://forbes.com/article/wise-international-payments,editorial,0,4
+P035,What is the best multi-currency payment solution?,international_payments,ChatGPT,Square,https://squareup.com/docs/international-payments,product,1,5
+P036,How do I pay international contractors and freelancers?,international_payments,ChatGPT,Chime,https://venturebeat.com/article/chime-international-payments,editorial,0,1
+P036,How do I pay international contractors and freelancers?,international_payments,ChatGPT,Stripe,https://g2.com/article/stripe-international-payments,reference,0,2
+P036,How do I pay international contractors and freelancers?,international_payments,ChatGPT,Apple Pay,https://nytimes.com/article/apple-pay-international-payments,editorial,0,3
+P036,How do I pay international contractors and freelancers?,international_payments,ChatGPT,Checkout.com,https://wired.com/article/checkout.com-international-payments,editorial,0,4
+P036,How do I pay international contractors and freelancers?,international_payments,ChatGPT,Klarna,https://capterra.com/article/klarna-international-payments,reference,0,5
+P037,What is SEPA and how does it work?,international_payments,ChatGPT,Venmo,https://stackexchange.com/article/venmo-international-payments,ugc,0,1
+P037,What is SEPA and how does it work?,international_payments,ChatGPT,Marqeta,https://venturebeat.com/article/marqeta-international-payments,editorial,0,2
+P037,What is SEPA and how does it work?,international_payments,ChatGPT,Stax,https://staxpayments.com/features/international-payments,product,1,3
+P038,How do I accept payments in emerging markets?,international_payments,ChatGPT,PayPal,https://venturebeat.com/article/paypal-international-payments,editorial,0,1
+P038,How do I accept payments in emerging markets?,international_payments,ChatGPT,Square,https://squareup.com/pricing/international-payments,product,1,2
+P039,What are the best payment options for cross-border e-commerce?,international_payments,ChatGPT,Klarna,https://klarna.com/features/international-payments,product,1,1
+P039,What are the best payment options for cross-border e-commerce?,international_payments,ChatGPT,Braintree,https://capterra.com/article/braintree-international-payments,reference,0,2
+P040,How do I reduce international payment fees?,international_payments,ChatGPT,Braintree,https://braintreegateway.com/features/international-payments,blog,1,1
+P040,How do I reduce international payment fees?,international_payments,ChatGPT,Chime,https://chime.com/blog/international-payments,product,1,2
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,Chime,https://nerdwallet.com/article/chime-international-payments,reference,0,1
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,Klarna,https://forbes.com/article/klarna-international-payments,editorial,0,2
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,PayPal,https://pcmag.com/article/paypal-international-payments,reference,0,3
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,Square,https://investopedia.com/article/square-international-payments,reference,0,4
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,Checkout.com,https://nerdwallet.com/article/checkout.com-international-payments,reference,0,5
+P041,What payment methods are most popular in Europe?,international_payments,ChatGPT,Plaid,https://plaid.com/blog/international-payments,product,1,6
+P042,How do I set up a payment system for a global business?,international_payments,ChatGPT,Worldpay,https://investopedia.com/article/worldpay-international-payments,reference,0,1
+P042,How do I set up a payment system for a global business?,international_payments,ChatGPT,Square,https://cnbc.com/article/square-international-payments,editorial,0,2
+P042,How do I set up a payment system for a global business?,international_payments,ChatGPT,Adyen,https://nytimes.com/article/adyen-international-payments,editorial,0,3
+P042,How do I set up a payment system for a global business?,international_payments,ChatGPT,Klarna,https://quora.com/article/klarna-international-payments,ugc,0,4
+P043,What is the best FX rate for international business payments?,international_payments,ChatGPT,Adyen,https://adyen.com/features/international-payments,product,1,1
+P043,What is the best FX rate for international business payments?,international_payments,ChatGPT,Braintree,https://capterra.com/article/braintree-international-payments,reference,0,2
+P043,What is the best FX rate for international business payments?,international_payments,ChatGPT,Square,https://wired.com/article/square-international-payments,editorial,0,3
+P043,What is the best FX rate for international business payments?,international_payments,ChatGPT,Venmo,https://venmo.com/pricing/international-payments,blog,1,4
+P043,What is the best FX rate for international business payments?,international_payments,ChatGPT,Cash App,https://nytimes.com/article/cash-app-international-payments,editorial,0,5
+P044,How does Adyen handle multi-currency payments?,international_payments,ChatGPT,Stripe,https://pcmag.com/article/stripe-international-payments,reference,0,1
+P044,How does Adyen handle multi-currency payments?,international_payments,ChatGPT,Chime,https://nytimes.com/article/chime-international-payments,editorial,0,2
+P044,How does Adyen handle multi-currency payments?,international_payments,ChatGPT,Braintree,https://braintreegateway.com/features/international-payments,landing_page,1,3
+P044,How does Adyen handle multi-currency payments?,international_payments,ChatGPT,Klarna,https://pcmag.com/article/klarna-international-payments,reference,0,4
+P045,What payment options work in Asia for online businesses?,international_payments,ChatGPT,Klarna,https://klarna.com/features/international-payments,blog,1,1
+P045,What payment options work in Asia for online businesses?,international_payments,ChatGPT,Adyen,https://capterra.com/article/adyen-international-payments,reference,0,2
+P045,What payment options work in Asia for online businesses?,international_payments,ChatGPT,Braintree,https://braintreegateway.com/docs/international-payments,blog,1,3
+P045,What payment options work in Asia for online businesses?,international_payments,ChatGPT,Square,https://squareup.com/pricing/international-payments,landing_page,1,4
+P045,What payment options work in Asia for online businesses?,international_payments,ChatGPT,Wise,https://bankrate.com/article/wise-international-payments,reference,0,5
+P046,What is buy now pay later and how does it work?,consumer_credit,ChatGPT,Square,https://squareup.com/blog/consumer-credit,blog,1,1
+P046,What is buy now pay later and how does it work?,consumer_credit,ChatGPT,Wise,https://nerdwallet.com/article/wise-consumer-credit,reference,0,2
+P047,What are the best BNPL options for consumers?,consumer_credit,ChatGPT,Stripe,https://cnbc.com/article/stripe-consumer-credit,editorial,0,1
+P047,What are the best BNPL options for consumers?,consumer_credit,ChatGPT,Square,https://squareup.com/docs/consumer-credit,blog,1,2
+P047,What are the best BNPL options for consumers?,consumer_credit,ChatGPT,Klarna,https://capterra.com/article/klarna-consumer-credit,reference,0,3
+P048,How does Klarna compare to Affirm?,consumer_credit,ChatGPT,PayPal,https://businessinsider.com/article/paypal-consumer-credit,editorial,0,1
+P048,How does Klarna compare to Affirm?,consumer_credit,ChatGPT,Cash App,https://cash.app/features/consumer-credit,product,1,2
+P049,What are the risks of buy now pay later services?,consumer_credit,ChatGPT,Adyen,https://adyen.com/blog/consumer-credit,landing_page,1,1
+P049,What are the risks of buy now pay later services?,consumer_credit,ChatGPT,Google Pay,https://businessinsider.com/article/google-pay-consumer-credit,editorial,0,2
+P049,What are the risks of buy now pay later services?,consumer_credit,ChatGPT,Square,https://squareup.com/features/consumer-credit,blog,1,3
+P049,What are the risks of buy now pay later services?,consumer_credit,ChatGPT,Checkout.com,https://checkout.com/blog/consumer-credit,landing_page,1,4
+P050,Which retailers offer buy now pay later?,consumer_credit,ChatGPT,Stripe,https://nytimes.com/article/stripe-consumer-credit,editorial,0,1
+P050,Which retailers offer buy now pay later?,consumer_credit,ChatGPT,Adyen,https://businessinsider.com/article/adyen-consumer-credit,editorial,0,2
+P050,Which retailers offer buy now pay later?,consumer_credit,ChatGPT,Checkout.com,https://capterra.com/article/checkout.com-consumer-credit,reference,0,3
+P051,How does Afterpay work?,consumer_credit,ChatGPT,Affirm,https://wsj.com/article/affirm-consumer-credit,editorial,0,1
+P051,How does Afterpay work?,consumer_credit,ChatGPT,Marqeta,https://g2.com/article/marqeta-consumer-credit,reference,0,2
+P051,How does Afterpay work?,consumer_credit,ChatGPT,Adyen,https://cnbc.com/article/adyen-consumer-credit,editorial,0,3
+P051,How does Afterpay work?,consumer_credit,ChatGPT,Checkout.com,https://bankrate.com/article/checkout.com-consumer-credit,reference,0,4
+P051,How does Afterpay work?,consumer_credit,ChatGPT,Google Pay,https://techcrunch.com/article/google-pay-consumer-credit,editorial,0,5
+P052,What are the best consumer credit options for online shopping?,consumer_credit,ChatGPT,Stripe,https://investopedia.com/article/stripe-consumer-credit,reference,0,1
+P052,What are the best consumer credit options for online shopping?,consumer_credit,ChatGPT,Adyen,https://bankrate.com/article/adyen-consumer-credit,reference,0,2
+P052,What are the best consumer credit options for online shopping?,consumer_credit,ChatGPT,Square,https://nerdwallet.com/article/square-consumer-credit,reference,0,3
+P052,What are the best consumer credit options for online shopping?,consumer_credit,ChatGPT,PayPal,https://bankrate.com/article/paypal-consumer-credit,reference,0,4
+P052,What are the best consumer credit options for online shopping?,consumer_credit,ChatGPT,Plaid,https://plaid.com/docs/consumer-credit,landing_page,1,5
+P053,How does Affirm work for merchants?,consumer_credit,ChatGPT,Plaid,https://plaid.com/docs/consumer-credit,product,1,1
+P053,How does Affirm work for merchants?,consumer_credit,ChatGPT,Klarna,https://stackexchange.com/article/klarna-consumer-credit,ugc,0,2
+P053,How does Affirm work for merchants?,consumer_credit,ChatGPT,Adyen,https://adyen.com/pricing/consumer-credit,blog,1,3
+P053,How does Affirm work for merchants?,consumer_credit,ChatGPT,Square,https://squareup.com/docs/consumer-credit,blog,1,4
+P053,How does Affirm work for merchants?,consumer_credit,ChatGPT,Stripe,https://investopedia.com/article/stripe-consumer-credit,reference,0,5
+P054,Is buy now pay later a good option for large purchases?,consumer_credit,ChatGPT,Adyen,https://adyen.com/features/consumer-credit,product,1,1
+P054,Is buy now pay later a good option for large purchases?,consumer_credit,ChatGPT,Stripe,https://cnbc.com/article/stripe-consumer-credit,editorial,0,2
+P054,Is buy now pay later a good option for large purchases?,consumer_credit,ChatGPT,Klarna,https://klarna.com/features/consumer-credit,landing_page,1,3
+P054,Is buy now pay later a good option for large purchases?,consumer_credit,ChatGPT,Affirm,https://forbes.com/article/affirm-consumer-credit,editorial,0,4
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,Adyen,https://adyen.com/pricing/consumer-credit,landing_page,1,1
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,PayPal,https://cnbc.com/article/paypal-consumer-credit,editorial,0,2
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,Venmo,https://wsj.com/article/venmo-consumer-credit,editorial,0,3
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,Stripe,https://stackexchange.com/article/stripe-consumer-credit,ugc,0,4
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,Chime,https://techcrunch.com/article/chime-consumer-credit,editorial,0,5
+P055,How do I integrate BNPL into my checkout?,consumer_credit,ChatGPT,Affirm,https://affirm.com/pricing/consumer-credit,product,1,6
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Square,https://cnbc.com/article/square-consumer-credit,editorial,0,1
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Stripe,https://g2.com/article/stripe-consumer-credit,reference,0,2
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Braintree,https://reddit.com/article/braintree-consumer-credit,ugc,0,3
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Venmo,https://venturebeat.com/article/venmo-consumer-credit,editorial,0,4
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Checkout.com,https://checkout.com/blog/consumer-credit,product,1,5
+P056,What credit options does PayPal offer?,consumer_credit,ChatGPT,Affirm,https://venturebeat.com/article/affirm-consumer-credit,editorial,0,6
+P057,What is the difference between BNPL and credit cards?,consumer_credit,ChatGPT,WooPayments,https://woo.com/pricing/consumer-credit,landing_page,1,1
+P057,What is the difference between BNPL and credit cards?,consumer_credit,ChatGPT,Worldpay,https://quora.com/article/worldpay-consumer-credit,ugc,0,2
+P057,What is the difference between BNPL and credit cards?,consumer_credit,ChatGPT,Affirm,https://affirm.com/blog/consumer-credit,product,1,3
+P057,What is the difference between BNPL and credit cards?,consumer_credit,ChatGPT,PayPal,https://wsj.com/article/paypal-consumer-credit,editorial,0,4
+P057,What is the difference between BNPL and credit cards?,consumer_credit,ChatGPT,Plaid,https://plaid.com/pricing/consumer-credit,product,1,5
+P058,How do I offer financing options on my e-commerce site?,consumer_credit,ChatGPT,Wise,https://pcmag.com/article/wise-consumer-credit,reference,0,1
+P058,How do I offer financing options on my e-commerce site?,consumer_credit,ChatGPT,Affirm,https://techcrunch.com/article/affirm-consumer-credit,editorial,0,2
+P058,How do I offer financing options on my e-commerce site?,consumer_credit,ChatGPT,Venmo,https://venmo.com/pricing/consumer-credit,landing_page,1,3
+P058,How do I offer financing options on my e-commerce site?,consumer_credit,ChatGPT,Adyen,https://pcmag.com/article/adyen-consumer-credit,reference,0,4
+P059,What are the merchant fees for Klarna?,consumer_credit,ChatGPT,Braintree,https://braintreegateway.com/pricing/consumer-credit,blog,1,1
+P059,What are the merchant fees for Klarna?,consumer_credit,ChatGPT,Wise,https://forbes.com/article/wise-consumer-credit,editorial,0,2
+P060,How is BNPL affecting consumer credit scores?,consumer_credit,ChatGPT,Square,https://wsj.com/article/square-consumer-credit,editorial,0,1
+P060,How is BNPL affecting consumer credit scores?,consumer_credit,ChatGPT,Adyen,https://adyen.com/features/consumer-credit,product,1,2
+P060,How is BNPL affecting consumer credit scores?,consumer_credit,ChatGPT,PayPal,https://nerdwallet.com/article/paypal-consumer-credit,reference,0,3
+P061,What is the best payment solution for small businesses?,small_business,ChatGPT,Affirm,https://investopedia.com/article/affirm-small-business,reference,0,1
+P061,What is the best payment solution for small businesses?,small_business,ChatGPT,Adyen,https://nytimes.com/article/adyen-small-business,editorial,0,2
+P061,What is the best payment solution for small businesses?,small_business,ChatGPT,Google Pay,https://nytimes.com/article/google-pay-small-business,editorial,0,3
+P061,What is the best payment solution for small businesses?,small_business,ChatGPT,Klarna,https://venturebeat.com/article/klarna-small-business,editorial,0,4
+P062,How do I accept payments as a freelancer?,small_business,ChatGPT,Stripe,https://stripe.com/docs/small-business,landing_page,1,1
+P062,How do I accept payments as a freelancer?,small_business,ChatGPT,Adyen,https://adyen.com/blog/small-business,landing_page,1,2
+P062,How do I accept payments as a freelancer?,small_business,ChatGPT,Square,https://bankrate.com/article/square-small-business,reference,0,3
+P062,How do I accept payments as a freelancer?,small_business,ChatGPT,Wise,https://wired.com/article/wise-small-business,editorial,0,4
+P063,What is the cheapest way to accept credit card payments?,small_business,ChatGPT,Affirm,https://nerdwallet.com/article/affirm-small-business,reference,0,1
+P063,What is the cheapest way to accept credit card payments?,small_business,ChatGPT,Wise,https://stackexchange.com/article/wise-small-business,ugc,0,2
+P064,How does Square compare to Stripe for small businesses?,small_business,ChatGPT,Square,https://investopedia.com/article/square-small-business,reference,0,1
+P064,How does Square compare to Stripe for small businesses?,small_business,ChatGPT,Adyen,https://venturebeat.com/article/adyen-small-business,editorial,0,2
+P065,What is the best mobile payment solution for in-person sales?,small_business,ChatGPT,PayPal,https://bankrate.com/article/paypal-small-business,reference,0,1
+P065,What is the best mobile payment solution for in-person sales?,small_business,ChatGPT,Worldpay,https://cnbc.com/article/worldpay-small-business,editorial,0,2
+P065,What is the best mobile payment solution for in-person sales?,small_business,ChatGPT,Apple Pay,https://wired.com/article/apple-pay-small-business,editorial,0,3
+P066,How do I send invoices and accept online payments?,small_business,ChatGPT,Klarna,https://venturebeat.com/article/klarna-small-business,editorial,0,1
+P066,How do I send invoices and accept online payments?,small_business,ChatGPT,Stripe,https://bankrate.com/article/stripe-small-business,reference,0,2
+P067,What payment app is best for a food truck or market vendor?,small_business,ChatGPT,Worldpay,https://nytimes.com/article/worldpay-small-business,editorial,0,1
+P067,What payment app is best for a food truck or market vendor?,small_business,ChatGPT,Stripe,https://bankrate.com/article/stripe-small-business,reference,0,2
+P068,How do I accept payments on my phone?,small_business,ChatGPT,Wise,https://quora.com/article/wise-small-business,ugc,0,1
+P068,How do I accept payments on my phone?,small_business,ChatGPT,Klarna,https://techcrunch.com/article/klarna-small-business,editorial,0,2
+P069,What is the best payment system for a restaurant?,small_business,ChatGPT,Google Pay,https://techcrunch.com/article/google-pay-small-business,editorial,0,1
+P069,What is the best payment system for a restaurant?,small_business,ChatGPT,Square,https://squareup.com/features/small-business,landing_page,1,2
+P069,What is the best payment system for a restaurant?,small_business,ChatGPT,Adyen,https://venturebeat.com/article/adyen-small-business,editorial,0,3
+P069,What is the best payment system for a restaurant?,small_business,ChatGPT,PayPal,https://pcmag.com/article/paypal-small-business,reference,0,4
+P069,What is the best payment system for a restaurant?,small_business,ChatGPT,Chime,https://g2.com/article/chime-small-business,reference,0,5
+P070,How do small businesses avoid chargebacks?,small_business,ChatGPT,Chime,https://chime.com/blog/small-business,product,1,1
+P070,How do small businesses avoid chargebacks?,small_business,ChatGPT,Square,https://wired.com/article/square-small-business,editorial,0,2
+P070,How do small businesses avoid chargebacks?,small_business,ChatGPT,Wise,https://wise.com/features/small-business,product,1,3
+P070,How do small businesses avoid chargebacks?,small_business,ChatGPT,PayPal,https://quora.com/article/paypal-small-business,ugc,0,4
+P070,How do small businesses avoid chargebacks?,small_business,ChatGPT,Adyen,https://adyen.com/blog/small-business,blog,1,5
+P071,What payment processor integrates with QuickBooks?,small_business,ChatGPT,Worldpay,https://worldpay.com/features/small-business,landing_page,1,1
+P071,What payment processor integrates with QuickBooks?,small_business,ChatGPT,PayPal,https://paypal.com/features/small-business,landing_page,1,2
+P072,How do I accept contactless payments?,small_business,ChatGPT,PayPal,https://wsj.com/article/paypal-small-business,editorial,0,1
+P072,How do I accept contactless payments?,small_business,ChatGPT,Apple Pay,https://investopedia.com/article/apple-pay-small-business,reference,0,2
+P072,How do I accept contactless payments?,small_business,ChatGPT,Square,https://forbes.com/article/square-small-business,editorial,0,3
+P072,How do I accept contactless payments?,small_business,ChatGPT,Google Pay,https://g2.com/article/google-pay-small-business,reference,0,4
+P072,How do I accept contactless payments?,small_business,ChatGPT,Stripe,https://forbes.com/article/stripe-small-business,editorial,0,5
+P073,What is the best POS system for a retail shop?,small_business,ChatGPT,Braintree,https://g2.com/article/braintree-small-business,reference,0,1
+P073,What is the best POS system for a retail shop?,small_business,ChatGPT,Klarna,https://businessinsider.com/article/klarna-small-business,editorial,0,2
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Stripe,https://stripe.com/docs/small-business,product,1,1
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Worldpay,https://cnbc.com/article/worldpay-small-business,editorial,0,2
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Apple Pay,https://apple.com/pricing/small-business,blog,1,3
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Klarna,https://nytimes.com/article/klarna-small-business,editorial,0,4
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Adyen,https://capterra.com/article/adyen-small-business,reference,0,5
+P074,How do I set up recurring payments for my service business?,small_business,ChatGPT,Plaid,https://stackexchange.com/article/plaid-small-business,ugc,0,6
+P075,What are the best payment options for a gig economy worker?,small_business,ChatGPT,Adyen,https://g2.com/article/adyen-small-business,reference,0,1
+P075,What are the best payment options for a gig economy worker?,small_business,ChatGPT,Checkout.com,https://cnbc.com/article/checkout.com-small-business,editorial,0,2
+P075,What are the best payment options for a gig economy worker?,small_business,ChatGPT,Stripe,https://cnbc.com/article/stripe-small-business,editorial,0,3
+P075,What are the best payment options for a gig economy worker?,small_business,ChatGPT,Wise,https://bankrate.com/article/wise-small-business,reference,0,4
