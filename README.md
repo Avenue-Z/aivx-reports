@@ -270,6 +270,36 @@ Before every publish:
 
 ---
 
+## Data Sources
+
+| Section | Source | Type | Notes |
+|---------|--------|------|-------|
+| Research Overview | Peec workspace | Live / CSV export | Prompts, brands, topic clusters, date window |
+| State of AI Usage | Hardcoded in `agent.py` (`MARKET_RESEARCH`) | Static | Platform share stats, adoption figures — update manually as stats evolve |
+| Analysis Findings | Peec workspace | Live / CSV export | SOV, earned/owned, technical, trends — all computed from citation rows |
+| Competitive Standings | Peec workspace | Live / CSV export | Rankings and tier classification |
+| Recommendations | Peec workspace | Computed | Injected from analysis results — no external source |
+
+**Note on Section 2:** The market research stats (400M ChatGPT users, 65% B2B buyer adoption, platform share percentages, etc.) are hardcoded in `agent.py` under `MARKET_RESEARCH`. These are not pulled from a live API — they need to be manually reviewed and updated periodically as the AI market evolves. Current stats are sourced from OpenAI, Pew Research, Gartner, and Forrester (2024-2025).
+
+---
+
+## Changelog
+
+Updates to the pipeline should be documented here every time a meaningful change is made — so the team always knows what version they're working with and what changed.
+
+| Date | Change | Author |
+|------|--------|--------|
+| 2026-05-20 | V1 shipped. Digital Banks report published. CSV path confirmed as production path for pitch workspaces. | Thomas Chang |
+| 2026-05-20 | peec_mapper.py rewritten for confirmed Peec export format (one row per prompt, comma-separated mentions column). | Thomas Chang |
+| 2026-05-20 | Section 4 label: "Year-Over-Year" changed to "Competitive Standings" for first-edition reports with no prior PDF. | Thomas Chang |
+| 2026-05-20 | All topic clusters now show individual citation percentages in Research Overview. | Thomas Chang |
+| 2026-05-20 | Rec 2 and Rec 4 fallbacks updated — always inject real data, never show generic text. | Thomas Chang |
+| 2026-05-20 | SOV donut "Other" label changed to "All Other Brands (N)" showing exact count. | Thomas Chang |
+| 2026-05-21 | Agent code, peec_mapper, renderer, and test harness added to this repo. README created. | Thomas Chang |
+
+---
+
 ## Contact
 
 Built and maintained by Thomas Chang, AI Automation Engineer — Avenue Z.
