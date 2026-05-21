@@ -58,13 +58,30 @@ cp agent/.env.example agent/.env
 
 ---
 
+## Peec Workspace Types — Read This First
+
+There are two types of Peec workspaces and they behave differently. Knowing which type you have determines which run path to use.
+
+| Workspace Type | Used For | API Access | Run Path |
+|----------------|----------|------------|----------|
+| **Pitch workspace** | Lead-gen reports (industry benchmarks published to hub) | **Blocked** — API rate limited | CSV export path (Path 1) |
+| **Customer workspace** | Client delivery (private, billable audits) | Full API access | Live API path (Path 2) |
+
+### Why pitch workspaces are different
+
+All AIVx lead-gen reports — Digital Banks, DMA, Benefits, and every future industry report — run on **pitch workspaces**. Peec's pitch workspace type has a known API limitation: the `/chats` endpoint is rate limited in a way that blocks programmatic data pulls.
+
+Before this pipeline existed, running a report on a pitch workspace meant someone on the team had to manually export data from the Peec dashboard, pull screenshots of every chart, and compile findings by hand — 20-30 hours per report. That is what this agent replaced.
+
+The API limitation is still unresolved. The workaround is a manual CSV export (3 files from the Peec dashboard), which the mapper transforms into agent-ready format. This is the confirmed production path for all lead-gen reports until Peec fixes the API limitation. Flagged to Peec support (contact: Clemente) — no ETA.
+
+---
+
 ## How to Run a New Report
 
-There are two paths depending on your Peec workspace type.
+### Path 1: CSV Export — Use this for ALL lead-gen / pitch workspace reports
 
-### Path 1: CSV Export (Current V1 — use this for pitch workspaces)
-
-Peec pitch workspaces have an API limitation. Export CSVs manually instead.
+This is the current production path. Every industry report on the hub was run this way.
 
 **Step 1: Export from Peec**
 
@@ -121,9 +138,9 @@ Vercel deploys automatically. Report is live within 60 seconds.
 
 ---
 
-### Path 2: Live API (Non-pitch workspaces)
+### Path 2: Live API — Use this for client delivery / customer workspace reports
 
-For customer-space workspaces, the agent can pull data directly — no CSV exports needed.
+For customer-space workspaces (private client audits, not lead-gen pitch reports), the agent pulls data directly from the Peec API. No CSV exports needed.
 
 ```bash
 cd agent
@@ -243,7 +260,9 @@ Before every publish:
 
 ## Known Limitations
 
-**Peec pitch workspace API limit:** Pitch workspaces cannot be accessed via the live API (rate limited). Use the CSV export path (Path 1 above). Flagged to Peec support — no ETA on fix. Once resolved, the live API path works for all workspace types.
+**Peec pitch workspace API limit:** All lead-gen reports run on pitch workspaces, which block programmatic API access. This is the primary operational constraint on the pipeline. See the "Peec Workspace Types" section above for full context and the CSV workaround. Flagged to Peec support — no ETA.
+
+**CSV vs. live API methodology difference:** The CSV path creates one row per brand per prompt (binary presence). The live API path creates one row per brand per ChatGPT conversation (~800 total). Relative SOV rankings are identical between paths. Absolute citation counts are lower on the CSV path. This difference is acceptable for lead-gen use cases — confirmed by Tina.
 
 **Year-over-year comparison:** Requires a prior-year PDF report passed via `--prior-pdf`. For first-edition reports, Section 4 shows current competitive standings as a baseline for future comparisons.
 
