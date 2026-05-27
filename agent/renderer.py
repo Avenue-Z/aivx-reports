@@ -1471,8 +1471,12 @@ def build_section3(findings: dict) -> str:
   </div>"""
 
     # ── 3D: Technical Factors ────────────────────────────────────────────────
+    # Only render the position table when data is actually differentiated.
+    # When all brands tie at avg_rank=1.0 (CSV path), showing the table
+    # creates a 10-row table of identical values that looks broken.
+    position_differentiated = technical.get("position_is_differentiated", False)
     tech_rows = ""
-    if technical.get("has_rank_data") and technical.get("technical_leaders"):
+    if technical.get("has_rank_data") and technical.get("technical_leaders") and position_differentiated:
         for brand in technical["technical_leaders"][:10]:
             tech_rows += f"""
             <tr>
@@ -1493,6 +1497,11 @@ def build_section3(findings: dict) -> str:
           {tech_rows}
         </table>"""
 
+    if position_differentiated:
+        tech_position_narrative = f"<strong>{esc(technical.get('top_technical_brand', 'N/A'))}</strong> leads on average citation position in this analysis, suggesting strong technical optimization supporting its AI visibility profile."
+    else:
+        tech_position_narrative = "Citation position is consistent across brands in this dataset — the majority are cited in the first position when they appear. AI visibility in this category is primarily driven by breadth of citation across prompts, not by positional ranking within individual responses."
+
     section_3d = f"""
   <div class="sub-section">
     <div class="sub-label">3D / Technical Optimization</div>
@@ -1502,18 +1511,11 @@ def build_section3(findings: dict) -> str:
       brands are cited and where in an AI response they appear.
     </p>
     <p class="narrative">
-      Citation position (where in a response a brand is mentioned) serves as a proxy
-      for technical visibility quality. Brands cited earlier, in position 1 or 2,
-      tend to have stronger technical signals: cleaner site structure, faster performance,
-      better schema markup, and more comprehensive entity recognition.
+      Citation position serves as a proxy for technical visibility quality.
+      Brands cited earlier in a response tend to have stronger technical signals:
+      cleaner site structure, better schema markup, and more comprehensive entity recognition.
     </p>
-    <p class="narrative">
-      {
-        f"<strong>{esc(technical.get('top_technical_brand', 'N/A'))}</strong> leads on average citation position in this analysis, suggesting strong technical optimization supporting its AI visibility profile."
-        if technical.get('position_is_differentiated')
-        else "Citation position is uniform across this dataset — most brands in this category are cited in the first position when they appear. Technical differentiation at this level is determined by consistency of citation across the full prompt set, not by positional variance."
-      }
-    </p>
+    <p class="narrative">{tech_position_narrative}</p>
     {tech_table}
     <div class="insight-box" style="margin-top:24px">
       <strong>Key technical factors</strong> correlated with strong AI visibility:
