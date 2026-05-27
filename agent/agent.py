@@ -77,19 +77,19 @@ MARKET_RESEARCH = {
         {
             "mode": "Text Chat",
             "share": "73%",
-            "description": "The dominant interface. Users type queries directly into ChatGPT, Claude, or Gemini. Brand citations appear in direct responses — the primary visibility surface.",
+            "description": "The dominant interface. Users type queries directly into ChatGPT, Claude, or Gemini. Brand citations appear in direct responses, the primary visibility surface.",
             "trend": "Mature",
         },
         {
             "mode": "AI-Augmented Search",
             "share": "18%",
-            "description": "Perplexity, Bing Copilot, and Google AI Overviews layer AI responses on top of web search. Citations appear with source links — visibility requires both brand authority and web presence.",
+            "description": "Perplexity, Bing Copilot, and Google AI Overviews layer AI responses on top of web search. Citations appear with source links; visibility requires both brand authority and web presence.",
             "trend": "Fast-growing",
         },
         {
             "mode": "Voice & Mobile",
             "share": "6%",
-            "description": "Siri, Alexa, and mobile AI assistants surface single-answer responses. Brand that owns the top citation wins the entire query — zero-sum visibility.",
+            "description": "Siri, Alexa, and mobile AI assistants surface single-answer responses. The brand that owns the top citation wins the entire query. Zero-sum visibility.",
             "trend": "Emerging",
         },
         {
@@ -103,21 +103,21 @@ MARKET_RESEARCH = {
         "adoption": (
             "AI adoption has crossed the mainstream threshold. More than half of US adults have now "
             "used a generative AI tool, and weekly active usage is growing rapidly across every demographic. "
-            "For business buyers, AI is already embedded in the research and decision-making process — "
+            "For business buyers, AI is already embedded in the research and decision-making process. "
             "65% of B2B buyers report using AI tools when evaluating vendors and making purchasing decisions."
         ),
         "behavior_shift": (
             "The behavioral shift is structural, not cyclical. Consumers and buyers are increasingly "
-            "turning to AI as a first-stop for information — before visiting brand websites, before "
+            "turning to AI as a first stop for information, before visiting brand websites, before "
             "reading reviews, and before engaging with sales teams. When an AI model recommends a brand, "
             "that recommendation carries authority. When a brand is absent from AI responses, it is "
             "effectively invisible to a growing segment of its target market."
         ),
         "implication": (
-            "For brands in this industry, AI visibility is not a future concern — it is a present "
+            "For brands in this industry, AI visibility is not a future concern. It is a present "
             "competitive reality. The brands that establish strong AI citation patterns now will "
-            "benefit from compounding advantage as AI usage continues to grow. The brands that wait "
-            "will find the gap harder and more expensive to close with each passing quarter."
+            "benefit from compounding advantage as AI usage continues to grow. Waiting to invest "
+            "means competing against a field that has already built citation authority."
         ),
     },
 }
@@ -779,7 +779,7 @@ def analyze_yoy(sov: dict, prior_pdf_path: str = None) -> dict:
 
 
 def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) -> list:
-    """Generate 3–5 data-grounded trend statements with strategic implications."""
+    """Generate 3-5 data-grounded trend statements with strategic implications."""
     trends = []
 
     # Trend 1: Market concentration
@@ -789,13 +789,14 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
                 "title": "Winner-take-most dynamics are already in play",
                 "insight": (
                     f"The top 5 brands command {sov['top5_sov']}% of all AI citations in this category. "
-                    f"AI models have formed strong associations with a small group of leaders — "
-                    f"and those associations compound with every query answered."
+                    f"AI models have formed strong associations with a small group of leaders, and those "
+                    f"associations compound with every query answered."
                 ),
                 "implication": (
                     "For brands outside the top 5, the window to close the gap is narrowing. "
-                    "Passive content strategies will not move the needle. Deliberate AEO investment — "
-                    "earned media, structured content, technical optimization — is the only path in."
+                    "Earned media, structured content, and technical optimization need to move "
+                    "in parallel, not in sequence. Treating AEO as a future initiative means "
+                    "entering an increasingly expensive fight."
                 ),
             }
         )
@@ -804,13 +805,13 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
             {
                 "title": "AI visibility is still contestable in this category",
                 "insight": (
-                    f"The top 5 brands hold {sov['top5_sov']}% of AI citations — more distributed than "
+                    f"The top 5 brands hold {sov['top5_sov']}% of AI citations, more distributed than "
                     f"typical mature categories. No single brand has locked in dominant position."
                 ),
                 "implication": (
-                    "This is a genuine window of opportunity. Brands that invest in AEO now can enter "
-                    "the top tier before the category concentrates. The first-mover advantage in AI "
-                    "visibility is real — and temporary."
+                    "This is a genuine opening. Brands that invest in AEO now can reach the top tier "
+                    "before the category concentrates. First-mover advantage in AI visibility is real, "
+                    "and it is closing fast."
                 ),
             }
         )
@@ -821,16 +822,16 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
             {
                 "title": "PR and earned media are the primary drivers of AI visibility",
                 "insight": (
-                    f"{earned['earned_pct']}% of all AI citations reference earned media — "
+                    f"{earned['earned_pct']}% of all AI citations reference earned media: "
                     f"editorial coverage, third-party references, and authoritative external sources. "
                     f"AI models calibrate trust based on what credible third parties say about a brand, "
                     f"not what the brand says about itself."
                 ),
                 "implication": (
-                    "Every PR placement in a credible outlet is an AI visibility asset. "
+                    "Every PR placement in a credible outlet is a citation asset. "
                     "Brands that treat PR and AEO as separate disciplines are leaving significant "
-                    "visibility on the table. The most efficient path to AI citation is authoritative "
-                    "third-party coverage — not more owned content."
+                    "visibility on the table. The most direct path to AI citation is authoritative "
+                    "third-party coverage."
                 ),
             }
         )
@@ -839,14 +840,14 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
             {
                 "title": "Owned content plays an unusually strong role in AI citation here",
                 "insight": (
-                    f"{owned['owned_pct']}% of citations in this category reference brand-owned content — "
+                    f"{owned['owned_pct']}% of citations in this category reference brand-owned content, "
                     f"higher than typical. Brands with well-structured, answer-first content are getting "
                     f"cited directly by AI models."
                 ),
                 "implication": (
                     "Content infrastructure is a direct AI visibility lever in this category. "
-                    "Brands with strong owned content programs are already ahead. "
-                    "Structured, answer-oriented content — not marketing copy — is what AI models cite."
+                    "Structured, answer-oriented content is what AI models cite. "
+                    "Marketing copy does not convert to citations, regardless of volume."
                 ),
             }
         )
@@ -857,15 +858,15 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
         {
             "title": "Broad topical authority drives consistent AI citation",
             "insight": (
-                f"The category leader appears in {top_brand_prompts}% of all prompts analyzed — "
+                f"The category leader appears in {top_brand_prompts}% of all prompts analyzed, "
                 f"demonstrating authority across the full range of buyer questions, not just a "
                 f"few high-volume queries. Breadth of topic coverage is a key differentiator "
                 f"between leaders and challengers."
             ),
             "implication": (
-                "Brands optimizing for a narrow set of keywords or topics are limiting their "
-                "AI visibility ceiling. A comprehensive content and PR strategy that addresses "
-                "the full topic cluster map — including long-tail and comparison queries — "
+                "Brands optimizing for a narrow set of keywords or topics are capping their "
+                "AI visibility ceiling. A content and PR strategy that covers the full topic "
+                "cluster map, including long-tail and comparison queries, "
                 "is required to compete at the top tier."
             ),
         }
@@ -873,7 +874,7 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
 
     # Trend 4: Long tail invisibility
     if sov["total_brands"] > 10:
-        bottom_brands = sov["leaderboard"][sov["total_brands"] // 2 :]
+        bottom_brands = sov["leaderboard"][sov["total_brands"] // 2:]
         bottom_sov = round(sum(b["sov_pct"] for b in bottom_brands), 1)
         trends.append(
             {
@@ -881,14 +882,13 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
                 "insight": (
                     f"The bottom {len(bottom_brands)} brands in this analysis share only "
                     f"{bottom_sov}% of AI citations between them. For most brands in this "
-                    f"category, AI visibility is not low — it is absent."
+                    f"category, AI visibility is not low. It is absent."
                 ),
                 "implication": (
-                    "AI visibility follows a power law. There is no middle — brands are either "
-                    "building citation authority or they are invisible. Modest effort produces "
-                    "modest results. The brands that break into the top tier are making "
-                    "systematic, sustained AEO investments across earned media, owned content, "
-                    "and technical optimization simultaneously."
+                    "AI visibility follows a power law. Breaking into the top tier requires "
+                    "systematic, sustained investment across earned media, owned content, "
+                    "and technical optimization running simultaneously. Incremental changes "
+                    "produce incremental results in a field where incremental is indistinguishable from zero."
                 ),
             }
         )
@@ -902,14 +902,14 @@ def synthesize_trends(df: pd.DataFrame, sov: dict, earned: dict, owned: dict) ->
             "title": f"'{top_cluster.replace('_', ' ').title()}' queries drive the most AI citations",
             "insight": (
                 f"The '{top_cluster.replace('_', ' ')}' topic cluster accounts for "
-                f"{top_cluster_pct}% of citation activity — the highest of any cluster analyzed. "
+                f"{top_cluster_pct}% of citation activity, the highest of any cluster analyzed. "
                 f"Brands with strong positioning in this topic cluster benefit "
                 f"disproportionately across the query landscape."
             ),
             "implication": (
-                "Topic cluster weighting is not uniform. Understanding which question categories "
-                "drive the most AI activity in your industry — and ensuring you have authoritative "
-                "coverage of those clusters — is a higher-leverage investment than generic content volume."
+                "Topic cluster weighting is not uniform. Identifying which question categories "
+                "drive the most AI activity in your industry, and ensuring authoritative "
+                "coverage of those clusters, is a higher-leverage investment than generic content volume."
             ),
         }
     )
@@ -941,7 +941,7 @@ def generate_recommendations(
             f"and {top_srcs[2]['domain']}"
         )
         rec1_what = (
-            f"{src_str} are the top citation sources in this dataset — these are the "
+            f"{src_str} are the top citation sources in this dataset. These are the "
             f"outlets to prioritize for PR and editorial outreach. Build a dedicated "
             f"strategy targeting these publications specifically. Secure placements that "
             f"position your brand as an authoritative industry voice, not just product "
@@ -970,7 +970,7 @@ def generate_recommendations(
     if owned_pct > 0 and top_owned_brand and top_owned_brand != "N/A":
         rec2_why = (
             f"{owned_pct}% of AI citations in this dataset reference brand-owned content. "
-            f"{top_owned_brand} leads all brands with the highest owned citation rate — "
+            f"{top_owned_brand} leads all brands with the highest owned citation rate, "
             f"demonstrating that well-structured, answer-first content is cited directly by "
             f"AI models. Most brand content is built to persuade, not to inform, which actively "
             f"reduces citation probability regardless of volume."
@@ -984,7 +984,7 @@ def generate_recommendations(
         )
     else:
         rec2_why = (
-            f"In this dataset, {earned['earned_pct']}% of citations come from earned sources — "
+            f"In this dataset, {earned['earned_pct']}% of citations come from earned sources, "
             f"demonstrating that AI models overwhelmingly favor third-party coverage over "
             f"brand-owned content. The gap exists because most brand content is structured "
             f"to persuade, not to inform, which actively reduces citation probability "
@@ -1001,8 +1001,8 @@ def generate_recommendations(
         )
         rec3_what = (
             f"Use the topic clusters in this report as your content and PR brief. "
-            f"'{top_cluster['name']}' is the highest-activity cluster in this dataset — "
-            f"authoritative coverage there is the single highest-leverage content "
+            f"'{top_cluster['name']}' is the highest-activity cluster in this dataset. "
+            f"Authoritative coverage there is the single highest-leverage content "
             f"investment. For every cluster where your brand appears fewer than 3 times: "
             f"create one owned piece and pursue one editorial placement. Treat each "
             f"cluster as a distinct visibility campaign."
@@ -1025,14 +1025,14 @@ def generate_recommendations(
     has_rank_data = (technical or {}).get("has_rank_data", False)
     if has_rank_data and top_tech_brand and top_tech_brand != "N/A":
         rec4_why = (
-            f"Technical signals — schema markup, entity recognition, structured data — "
+            f"Technical signals including schema markup, entity recognition, and structured data "
             f"help AI models identify and trust your brand as a category authority. "
             f"{top_tech_brand} leads this dataset on citation positioning, appearing earlier "
             f"in AI responses than any other brand analyzed. Brands with strong technical "
             f"optimization show better citation consistency across all prompt types."
         )
         rec4_what = (
-            f"Study {top_tech_brand}'s technical footprint — they are the current benchmark "
+            f"Study {top_tech_brand}'s technical footprint. They are the current benchmark "
             f"for citation positioning in this category. Add Organization, Product, and FAQ "
             f"schema to all key pages. Verify your brand's Wikipedia entry exists and is accurate. "
             f"Confirm your Google Knowledge Panel is claimed and complete. "
@@ -1042,13 +1042,13 @@ def generate_recommendations(
         _proxy_brand = sov.get("top_brand", "")
         if _proxy_brand:
             rec4_why = (
-                f"Technical signals — schema markup, entity recognition, structured data — "
+                f"Technical signals including schema markup, entity recognition, and structured data "
                 f"help AI models identify and trust your brand as a category authority. "
                 f"{_proxy_brand}, the current visibility leader in this dataset, demonstrates "
                 f"the compounding advantage of being established as a recognized category entity."
             )
             rec4_what = (
-                f"Study {_proxy_brand}'s technical footprint — they are the current benchmark "
+                f"Study {_proxy_brand}'s technical footprint. They are the current benchmark "
                 f"for AI visibility in this category. Add Organization, Product, and FAQ "
                 f"schema to all key pages. Verify your brand's Wikipedia entry exists and is accurate. "
                 f"Confirm your Google Knowledge Panel is claimed and complete. "
@@ -1056,7 +1056,7 @@ def generate_recommendations(
             )
         else:
             rec4_why = (
-                "Technical signals — schema markup, entity recognition, structured data — "
+                "Technical signals including schema markup, entity recognition, and structured data "
                 "help AI models identify and trust your brand as a category authority. "
                 "Brands with strong technical optimization show better citation consistency "
                 "across all prompt types."
@@ -1075,7 +1075,7 @@ def generate_recommendations(
         brand_str = ", ".join(top5[:-1]) + f", and {top5[-1]}"
         rec5_what = (
             f"Set up a Peec workspace for your brand and benchmark it against "
-            f"{brand_str} — the current AI visibility leaders in this analysis. "
+            f"{brand_str}, the current AI visibility leaders in this analysis. "
             f"Run the AIVx report on a monthly cadence. "
             f"Track: overall rank, SOV%, prompt coverage %, and tier classification. "
             f"Treat AI visibility as a core marketing KPI alongside organic search rank."
@@ -1144,6 +1144,214 @@ def generate_recommendations(
             "horizon": "Immediate",
         },
     ]
+
+def compute_z_scores(sov: dict, technical: dict, earned: dict) -> list:
+    """
+    Avenue Z Z-Score: proprietary composite AI visibility index (0-100).
+
+    Four signals, four weights:
+      Breadth     40%  -- prompt coverage (% of total prompts brand appeared in)
+      Depth       30%  -- citation share relative to the category leader
+      Authority   20%  -- citation positioning quality (cited earlier = higher score)
+      Positioning 10%  -- earned media ratio (third-party validation drives AI trust)
+
+    All signals are normalized 0-100 before weighting so no single input dominates.
+    Returns list of dicts sorted by z_score descending.
+    """
+    leaderboard = sov.get("leaderboard", [])
+    if not leaderboard:
+        return []
+
+    # Normalization bounds
+    max_citations = leaderboard[0]["citation_count"] if leaderboard else 1
+    prompt_pcts = [b.get("prompt_pct", 0) for b in leaderboard]
+    max_prompt_pct = max(prompt_pcts) if prompt_pcts else 1
+
+    # Technical authority: brand -> avg_rank (lower rank = cited first = better)
+    tech_leaders = (technical or {}).get("technical_leaders", [])
+    tech_lookup = {t["brand"]: t["avg_rank"] for t in tech_leaders}
+    if len(tech_lookup) > 1:
+        min_rank = min(tech_lookup.values())
+        max_rank = max(tech_lookup.values())
+        rank_range = max_rank - min_rank
+    else:
+        min_rank = max_rank = rank_range = 1
+
+    # Earned ratio: brand -> earned_pct
+    earned_lookup = {
+        r["brand"]: r.get("earned_pct", 50)
+        for r in earned.get("brand_ratios", [])
+    }
+    category_earned_pct = earned.get("earned_pct", 50)
+
+    scores = []
+    for b in leaderboard:
+        brand = b["brand"]
+
+        # Breadth: prompt coverage relative to top performer
+        breadth_raw = b.get("prompt_pct", 0)
+        breadth = min(100.0, (breadth_raw / max_prompt_pct) * 100) if max_prompt_pct > 0 else 0.0
+
+        # Depth: citation count relative to category leader
+        depth = min(100.0, (b["citation_count"] / max_citations) * 100) if max_citations > 0 else 0.0
+
+        # Authority: invert avg_rank so lower rank = higher score
+        if brand in tech_lookup and rank_range > 0:
+            avg_rank = tech_lookup[brand]
+            authority = max(0.0, (1 - (avg_rank - min_rank) / rank_range) * 100)
+        elif brand in tech_lookup:
+            authority = 100.0  # only brand with rank data
+        else:
+            authority = 50.0  # neutral default when no position data
+
+        # Positioning: earned citation ratio (higher = more third-party authority)
+        earned_pct = earned_lookup.get(brand, category_earned_pct)
+        positioning = min(100.0, float(earned_pct))
+
+        # Weighted composite
+        z = round(
+            breadth * 0.40 +
+            depth * 0.30 +
+            authority * 0.20 +
+            positioning * 0.10,
+            1,
+        )
+
+        scores.append({
+            "brand": brand,
+            "z_score": z,
+            "breadth": round(breadth, 1),
+            "depth": round(depth, 1),
+            "authority": round(authority, 1),
+            "positioning": round(positioning, 1),
+            "tier": b.get("tier", "Developing"),
+            "rank": b.get("rank", 0),
+            "sov_pct": b.get("sov_pct", 0),
+        })
+
+    scores.sort(key=lambda x: x["z_score"], reverse=True)
+    return scores
+
+
+def generate_executive_summary(
+    sov: dict,
+    earned: dict,
+    trends: list,
+    recs: list,
+    industry: str,
+) -> dict:
+    """
+    3-5 takeaways for a CMO or Head of Growth audience.
+    Synthesized directly from existing findings -- no new analysis or LLM.
+    Returns dict with: headline, subheadline, takeaways list.
+    """
+    top_brand = sov["top_brand"]
+    top_sov = sov["top_brand_sov"]
+    total_brands = sov["total_brands"]
+    total_citations = sov["total_citations"]
+    earned_pct = earned["earned_pct"]
+    top5_sov = sov["top5_sov"]
+
+    takeaways = []
+
+    # Takeaway 1: who leads and concentration
+    other_count = max(0, total_brands - 5)
+    remaining_pct = round(100 - top5_sov, 1)
+    takeaways.append({
+        "number": 1,
+        "headline": f"{top_brand} leads {industry} AI visibility with {top_sov}% share of voice",
+        "detail": (
+            f"Across {total_citations:,} AI citations analyzed, {top_brand} captured {top_sov}% "
+            f"of all brand mentions. The top 5 brands together hold {top5_sov}% of citations"
+            + (
+                f", leaving {other_count} other brands competing for the remaining {remaining_pct}%."
+                if other_count > 0
+                else "."
+            )
+        ),
+        "action": (
+            f"Benchmark your brand's share of voice against {top_brand} to quantify the gap "
+            f"and identify which topic clusters to prioritize first."
+        ),
+    })
+
+    # Takeaway 2: earned media is the primary lever
+    takeaways.append({
+        "number": 2,
+        "headline": f"{earned_pct}% of AI citations come from earned media, not brand-owned content",
+        "detail": (
+            f"AI models predominantly cite third-party sources: editorial coverage, reference sites, "
+            f"and user reviews. Brands that dominate AI visibility have strong PR and earned media "
+            f"footprints. Owned content alone does not move the needle."
+        ),
+        "action": (
+            "PR and editorial outreach should be treated as a core AI visibility investment, "
+            "not a brand-awareness function separate from AEO."
+        ),
+    })
+
+    # Takeaway 3: market concentration signal
+    if sov["is_concentrated"]:
+        takeaways.append({
+            "number": 3,
+            "headline": f"AI visibility in {industry} is concentrated, and the gap is widening",
+            "detail": (
+                f"The top 5 brands account for {top5_sov}% of all AI citations. "
+                f"AI models form associations based on citation history, and those patterns compound. "
+                f"Brands outside the top tier will need sustained, coordinated investment to break through."
+            ),
+            "action": (
+                "The cost of entry to the top tier increases every quarter. "
+                "An AEO program started now reaches maturity faster than one started in 12 months."
+            ),
+        })
+    else:
+        takeaways.append({
+            "number": 3,
+            "headline": f"AI visibility in {industry} is still contestable, but that window is closing",
+            "detail": (
+                f"The top 5 brands hold {top5_sov}% of citations, more distributed than mature categories. "
+                f"No single brand has established dominant position. This is a genuine opening for "
+                f"a well-resourced challenger to reach the top tier."
+            ),
+            "action": (
+                "Act before this category concentrates. The distribution that exists today "
+                "will not exist in 12 months."
+            ),
+        })
+
+    # Takeaway 4: primary trend insight
+    if trends:
+        t = trends[0]
+        takeaways.append({
+            "number": 4,
+            "headline": t["title"],
+            "detail": t["insight"],
+            "action": t["implication"],
+        })
+
+    # Takeaway 5: highest-priority recommendation
+    if recs:
+        r = recs[0]
+        action_text = r["what"]
+        if len(action_text) > 200:
+            action_text = action_text[:197] + "..."
+        takeaways.append({
+            "number": 5,
+            "headline": f"Highest-priority action: {r['title']}",
+            "detail": r["why"],
+            "action": action_text,
+        })
+
+    return {
+        "headline": f"Who owns AI visibility in {industry}, and what it takes to compete",
+        "subheadline": (
+            f"{total_brands} brands analyzed across {total_citations:,} AI citations. "
+            f"ChatGPT data, 7-day collection window."
+        ),
+        "takeaways": takeaways[:5],
+    }
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CHART BUILDERS
@@ -1559,9 +1767,13 @@ def main():
         n_clusters=len(topic_clusters),
         top_cluster=top_cluster,
     )
+    z_scores = compute_z_scores(sov, technical, earned)
+    exec_summary = generate_executive_summary(sov, earned, trends, recs, args.industry)
     yoy = analyze_yoy(sov, prior_pdf_path=args.prior_pdf)
     print(f"    Leader: {sov['top_brand']} ({sov['top_brand_sov']}% SOV)")
     print(f"    Top 5 concentration: {sov['top5_sov']}%")
+    if z_scores:
+        print(f"    Z-Score leader: {z_scores[0]['brand']} ({z_scores[0]['z_score']})")
 
     # 3. Build charts
     print("  Building charts...")
@@ -1627,6 +1839,8 @@ def main():
         "trends": trends,
         "yoy": yoy,
         "recommendations": recs,
+        "z_scores": z_scores,
+        "executive_summary": exec_summary,
         "market_research": MARKET_RESEARCH,
         "charts": charts,
     }

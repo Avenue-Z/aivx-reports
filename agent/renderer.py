@@ -53,14 +53,14 @@ CSS = """
   --surface:   #272727;
   --subtle:    #1a1a1a;
   --white:     #FFFFFF;
-  --muted:     #8A8A8A;
-  --border:    rgba(255,255,255,0.06);
-  --yellow:    #FFFC60;
-  --green:     #60FF80;
-  --cyan:      #60FDFF;
-  --blue:      #39A0FF;
-  --purple:    #6034FF;
-  --grad:      linear-gradient(135deg, #FFFC60, #60FF80, #60FDFF, #39A0FF, #6034FF);
+  --muted:     #9A9A9A;
+  --border:    rgba(255,255,255,0.08);
+  --yellow:    #F5EF8A;
+  --green:     #7AFFAA;
+  --cyan:      #7AF5F7;
+  --blue:      #55AEFF;
+  --purple:    #8060FF;
+  --grad:      linear-gradient(135deg, #F5EF8A, #7AFFAA, #7AF5F7, #55AEFF, #8060FF);
   --sidebar-w: 240px;
 }
 
@@ -72,7 +72,7 @@ body {
   color: var(--white);
   display: flex;
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* ── Sidebar ─────────────────────────────────────────────── */
@@ -266,12 +266,12 @@ body {
   line-height: 1.2;
 }
 .section-intro {
-  font-size: 15px;
-  color: rgba(255,255,255,0.65);
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
   font-weight: 300;
   max-width: 720px;
   margin-bottom: 40px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ── KPI Strip ───────────────────────────────────────────── */
@@ -478,12 +478,12 @@ body {
 
 /* ── Narrative Paragraphs ────────────────────────────────── */
 .narrative {
-  font-size: 15px;
-  color: rgba(255,255,255,0.75);
+  font-size: 16px;
+  color: rgba(255,255,255,0.82);
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.82;
   max-width: 780px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 /* ── Sub-Section ─────────────────────────────────────────── */
@@ -677,23 +677,27 @@ body {
   line-height: 1.3;
 }
 .trend-insight {
-  font-size: 14px;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.65;
-  margin-bottom: 12px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.72;
+  margin-bottom: 14px;
 }
 .trend-implication {
-  font-size: 13px;
-  color: var(--cyan);
-  font-weight: 700;
-  line-height: 1.5;
-  padding-top: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.82);
+  font-weight: 400;
+  line-height: 1.65;
+  padding-top: 12px;
   border-top: 1px solid var(--border);
 }
-.trend-implication::before {
-  content: 'Strategic Implication → ';
-  color: var(--muted);
+.trend-implication-label {
+  display: block;
+  font-size: 10px;
   font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 6px;
 }
 
 /* ── Priority Cards ──────────────────────────────────────── */
@@ -737,15 +741,15 @@ body {
   line-height: 1.3;
 }
 .priority-why {
-  font-size: 14px;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.6;
-  margin-bottom: 12px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  margin-bottom: 14px;
 }
 .priority-what {
-  font-size: 14px;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.65;
+  font-size: 15px;
+  color: rgba(255,255,255,0.86);
+  line-height: 1.72;
   margin-bottom: 16px;
   padding: 14px 16px;
   background: rgba(255,255,255,0.03);
@@ -845,6 +849,103 @@ body {
   max-width: 680px;
 }
 
+/* ── Executive Summary ───────────────────────────────────── */
+.exec-summary {
+  padding: 56px 64px;
+  background: linear-gradient(180deg, #0d0d0d 0%, #060606 100%);
+  border-bottom: 1px solid var(--border);
+}
+.exec-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+.exec-headline {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  max-width: 760px;
+}
+.exec-subheadline {
+  font-size: 14px;
+  color: rgba(255,255,255,0.40);
+  font-weight: 400;
+  margin-bottom: 44px;
+  letter-spacing: 0.01em;
+}
+.exec-takeaways {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.exec-takeaway {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--surface);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 24px 28px;
+  position: relative;
+  overflow: hidden;
+}
+.exec-takeaway::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+}
+.exec-num {
+  font-size: 26px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  padding-top: 4px;
+}
+.exec-takeaway-headline {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 7px;
+  line-height: 1.3;
+}
+.exec-detail {
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.68;
+  margin-bottom: 10px;
+}
+.exec-action {
+  font-size: 13px;
+  color: rgba(255,255,255,0.86);
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 10px 14px;
+  background: rgba(122,245,247,0.06);
+  border-radius: 8px;
+  border-left: 3px solid var(--cyan);
+}
+
+/* ── Z-Score ─────────────────────────────────────────────── */
+.z-score {
+  font-size: 14px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.z-score-high { color: var(--green); }
+.z-score-mid  { color: var(--cyan); }
+.z-score-low  { color: var(--muted); }
+
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   :root { --sidebar-w: 0px; }
@@ -909,6 +1010,7 @@ def build_sidebar(findings: dict) -> str:
     <span>{industry}</span>
   </div>
   <nav class="sidebar-nav">
+    <a href="#exec-summary"><span class="nav-num">00</span> Executive Summary</a>
     <a href="#section-1"><span class="nav-num">01</span> Research Overview</a>
     <a href="#section-2"><span class="nav-num">02</span> State of AI Usage</a>
     <a href="#section-3"><span class="nav-num">03</span> Analysis Findings</a>
@@ -940,6 +1042,41 @@ def build_hero(findings: dict) -> str:
     <span class="hero-badge"><span class="dot"></span>Powered by Avenue Z</span>
   </div>
 </header>"""
+
+
+def build_executive_summary(findings: dict) -> str:
+    """Executive summary block: 3-5 takeaways for CMO/Head of Growth audience."""
+    exec_s = findings.get("executive_summary")
+    if not exec_s:
+        return ""
+
+    headline = esc(exec_s.get("headline", ""))
+    subheadline = esc(exec_s.get("subheadline", ""))
+    takeaways = exec_s.get("takeaways", [])
+
+    takeaways_html = ""
+    for t in takeaways:
+        num = t.get("number", "")
+        th = esc(t.get("headline", ""))
+        detail = esc(t.get("detail", ""))
+        action = esc(t.get("action", ""))
+        takeaways_html += f"""
+      <div class="exec-takeaway">
+        <div class="exec-num">{num}</div>
+        <div>
+          <div class="exec-takeaway-headline">{th}</div>
+          <div class="exec-detail">{detail}</div>
+          <div class="exec-action">{action}</div>
+        </div>
+      </div>"""
+
+    return f"""
+<section id="exec-summary" class="exec-summary">
+  <div class="exec-label">Executive Summary</div>
+  <div class="exec-headline">{headline}</div>
+  <div class="exec-subheadline">{subheadline}</div>
+  <div class="exec-takeaways">{takeaways_html}</div>
+</section>"""
 
 
 def build_section1(findings: dict) -> str:
@@ -974,7 +1111,7 @@ def build_section1(findings: dict) -> str:
   <p class="section-intro">
     This report is grounded in a structured analysis of how AI models respond
     to real buyer and consumer queries in the {esc(findings["industry"])} category.
-    Every data point in this report traces back to observed AI behavior — not surveys,
+    Every data point in this report traces back to observed AI behavior, not surveys,
     not keyword rankings, not traffic estimates.
   </p>
 
@@ -992,7 +1129,7 @@ def build_section1(findings: dict) -> str:
     <div class="kpi-card">
       <div class="kpi-label">AI Platform</div>
       <div class="kpi-value">{platform}</div>
-      <div class="kpi-sub">V1 — single platform analysis</div>
+      <div class="kpi-sub">V1, single platform analysis</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Topic Clusters</div>
@@ -1073,7 +1210,7 @@ def build_section2(findings: dict) -> str:
         engagement_section = f"""
   <div class="sub-section">
     <div class="sub-label">How Users Engage with AI</div>
-    <div class="sub-title">Four Interfaces — Four Visibility Surfaces</div>
+    <div class="sub-title">Four Interfaces, Four Visibility Surfaces</div>
     <p class="sub-intro">
       AI is not a single channel. Users interact with AI models across four distinct
       surfaces, each with different implications for brand discoverability.
@@ -1087,7 +1224,7 @@ def build_section2(findings: dict) -> str:
   <h2 class="section-title">Why AI Visibility Matters Right Now</h2>
   <p class="section-intro">
     Before examining how specific brands perform in AI, it is important to understand
-    the scale and trajectory of AI adoption — and what the shift means for brand
+    the scale and trajectory of AI adoption, and what the shift means for brand
     discoverability in the {esc(findings["industry"])} category.
   </p>
 
@@ -1122,6 +1259,9 @@ def build_section3(findings: dict) -> str:
     charts = findings["charts"]
     industry = esc(findings["industry"])
 
+    # Z-Score lookup: brand -> score data
+    z_lookup = {z["brand"]: z for z in findings.get("z_scores", [])}
+
     # ── 3A: Earned Media ────────────────────────────────────────────────────
     top_sources_rows = ""
     for s in earned.get("top_sources", [])[:8]:
@@ -1138,8 +1278,8 @@ def build_section3(findings: dict) -> str:
 
         _type_descriptions = {
             "editorial": (
-                "trade press, industry blogs, and third-party media coverage — "
-                "the primary signal AI models use to evaluate brand authority"
+                "trade press, industry blogs, and third-party media coverage. "
+                "This is the primary signal AI models use to evaluate brand authority."
             ),
             "direct recommendation": (
                 "unprompted brand mentions where ChatGPT names a brand without linking "
@@ -1173,7 +1313,7 @@ def build_section3(findings: dict) -> str:
 
         earned_narrative = (
             f"Among earned citations, <strong>{esc(dominant_type)}</strong> dominates at "
-            f"{dominant_pct}% — {dominant_desc}.{other_sentence}"
+            f"{dominant_pct}%: {dominant_desc}{other_sentence}"
         )
     else:
         earned_narrative = (
@@ -1187,7 +1327,7 @@ def build_section3(findings: dict) -> str:
     <div class="sub-label">3B / Earned Media</div>
     <div class="sub-title">How Third-Party Sources Drive AI Citations</div>
     <p class="sub-intro">
-      Earned media — editorial coverage, reference sources, and user-generated content —
+      Earned media (editorial coverage, reference sources, and user-generated content)
       accounts for {earned['earned_pct']}% of all AI citations in this category.
     </p>
     <div class="insight-box">
@@ -1233,7 +1373,7 @@ def build_section3(findings: dict) -> str:
       <div>
         <p class="narrative">
           The brand with the strongest owned media citation rate in this analysis is
-          <strong>{esc(owned['top_owned_brand'])}</strong> — suggesting a content infrastructure
+          <strong>{esc(owned['top_owned_brand'])}</strong>, suggesting a content infrastructure
           well-aligned with the questions AI models are answering.
         </p>
         <p class="narrative">
@@ -1253,6 +1393,19 @@ def build_section3(findings: dict) -> str:
         top3_class = "top3" if rank <= 3 else ""
         sov_pct = brand["sov_pct"]
         bar_width = min(100, sov_pct * 2.2)
+        # Z-Score cell
+        z_data = z_lookup.get(brand["brand"])
+        if z_data:
+            z_val = z_data["z_score"]
+            if z_val >= 70:
+                z_cls = "z-score z-score-high"
+            elif z_val >= 40:
+                z_cls = "z-score z-score-mid"
+            else:
+                z_cls = "z-score z-score-low"
+            z_cell = f'<span class="{z_cls}">{z_val}</span>'
+        else:
+            z_cell = '<span class="z-score z-score-low">N/A</span>'
         leaderboard_rows += f"""
         <tr>
           <td><span class="rank-num {top3_class}">{rank}</span></td>
@@ -1265,13 +1418,14 @@ def build_section3(findings: dict) -> str:
           </td>
           <td><span class="cite-count">{brand['citation_count']}</span></td>
           <td><span class="prompt-reach">{brand.get('prompt_pct', 0)}%</span></td>
+          <td>{z_cell}</td>
           <td>{tier_badge(brand['tier'])}</td>
         </tr>"""
 
     concentration_note = (
-        f"The top 5 brands hold {sov['top5_sov']}% of AI visibility — a highly concentrated market."
+        f"The top 5 brands hold {sov['top5_sov']}% of AI visibility: a highly concentrated market."
         if sov["is_concentrated"]
-        else f"Visibility is relatively distributed — top 5 brands hold {sov['top5_sov']}% of AI citations."
+        else f"Visibility is relatively distributed. The top 5 brands hold {sov['top5_sov']}% of AI citations."
     )
 
     section_3c = f"""
@@ -1293,6 +1447,7 @@ def build_section3(findings: dict) -> str:
             <th>AI Visibility</th>
             <th>Citations</th>
             <th>Prompt Reach</th>
+            <th title="Avenue Z composite AI visibility score: Breadth 40%, Depth 30%, Authority 20%, Positioning 10%">Z-Score &#9432;</th>
             <th>Tier</th>
           </tr>
         </thead>
@@ -1302,13 +1457,13 @@ def build_section3(findings: dict) -> str:
     <div class="two-col" style="margin-top:32px">
       <div>
         <div class="chart-wrap">
-          <div class="chart-title">Share of Voice — Top 5 Brands</div>
+          <div class="chart-title">Share of Voice: Top 5 Brands</div>
           {charts['sov_donut']}
         </div>
       </div>
       <div>
         <div class="chart-wrap">
-          <div class="chart-title">Citation Volume — Top 15 Brands</div>
+          <div class="chart-title">Citation Volume: Top 15 Brands</div>
           {charts['leaderboard_bar']}
         </div>
       </div>
@@ -1344,17 +1499,17 @@ def build_section3(findings: dict) -> str:
     <div class="sub-title">How Technical Quality Correlates with AI Visibility</div>
     <p class="sub-intro">
       Beyond content and earned media, technical factors influence how consistently
-      brands are cited — and where in an AI response they appear.
+      brands are cited and where in an AI response they appear.
     </p>
     <p class="narrative">
       Citation position (where in a response a brand is mentioned) serves as a proxy
-      for technical visibility quality. Brands cited earlier — in position 1 or 2 —
+      for technical visibility quality. Brands cited earlier, in position 1 or 2,
       tend to have stronger technical signals: cleaner site structure, faster performance,
       better schema markup, and more comprehensive entity recognition.
     </p>
     <p class="narrative">
       <strong>{esc(technical.get('top_technical_brand', 'N/A'))}</strong> leads on average
-      citation position in this analysis — suggesting strong technical optimization
+      citation position in this analysis, suggesting strong technical optimization
       supporting its AI visibility profile.
     </p>
     {tech_table}
@@ -1367,14 +1522,25 @@ def build_section3(findings: dict) -> str:
   </div>"""
 
     # ── 3E: Trends ───────────────────────────────────────────────────────────
+    _impl_labels = [
+        "What this means for challengers",
+        "How to act on this",
+        "The priority this unlocks",
+        "Why this matters now",
+        "The lever to pull",
+    ]
     trends_html = ""
     for i, trend in enumerate(trends, 1):
+        impl_label = _impl_labels[(i - 1) % len(_impl_labels)]
         trends_html += f"""
       <div class="trend-item">
         <div class="trend-num">Trend {i}</div>
         <div class="trend-title">{esc(trend['title'])}</div>
         <div class="trend-insight">{esc(trend['insight'])}</div>
-        <div class="trend-implication">{esc(trend['implication'])}</div>
+        <div class="trend-implication">
+          <span class="trend-implication-label">{esc(impl_label)}</span>
+          {esc(trend['implication'])}
+        </div>
       </div>"""
 
     section_3e = f"""
@@ -1430,7 +1596,7 @@ def build_section4(findings: dict) -> str:
         top_sov = yoy.get("top_brand_sov", sov["top_brand_sov"])
         is_concentrated = yoy.get("is_concentrated", sov["is_concentrated"])
         concentration_note = (
-            "AI visibility is highly concentrated at the top of this category — the brands ranked here have a compounding advantage that grows with every report cycle."
+            "AI visibility is highly concentrated at the top of this category. The brands ranked here have a compounding advantage that grows with every report cycle."
             if is_concentrated
             else "Visibility is relatively distributed, creating real opportunity for brands currently outside the top 5 to break in with focused effort."
         )
@@ -1440,14 +1606,14 @@ def build_section4(findings: dict) -> str:
   <div class="section-label">04 / Competitive Standings</div>
   <h2 class="section-title">Winners &amp; Losers: The Baseline Report</h2>
   <p class="section-intro">
-    This is the inaugural AIVx {industry} report. No prior-year data exists yet —
+    This is the inaugural AIVx {industry} report. No prior-year data exists yet,
     which means this edition defines the baseline. Every future ranking movement
     will be measured against what you see here.
   </p>
   <div class="insight-box">
     <strong>Why this matters:</strong> The brands ranked here today are establishing
-    citation authority before the competitive window narrows. AI visibility compounds —
-    brands cited consistently today will be harder to displace six months from now.
+    citation authority before the competitive window narrows. AI visibility compounds.
+    Brands cited consistently today will be harder to displace six months from now.
     The brands not on this list have a shrinking window to change that.
   </div>
   <p class="narrative" style="margin-bottom:8px">{concentration_note}</p>
@@ -1474,7 +1640,7 @@ def build_section4(findings: dict) -> str:
       next report cycle: does this lead hold, or do challengers close the gap?
     </p>
     <p class="narrative">
-      Watch for brands currently in positions 4 through 8 — they are close enough to
+      Watch for brands currently in positions 4 through 8. They are close enough to
       challenge the top 3 but far enough back that any slip in content or earned media
       activity could push them further down. The Developing-tier brands represent the
       most volatile segment: small changes in citation volume will produce large shifts
@@ -1510,9 +1676,9 @@ def build_section4(findings: dict) -> str:
         elif rank_change < 0:
             move_html = f'<span style="color:#FF6B6B;font-weight:700">&darr; {abs(rank_change)}</span>'
         else:
-            move_html = '<span style="color:#8A8A8A">&#8212;</span>'
+            move_html = '<span style="color:#8A8A8A">&#8211;</span>'
 
-        prior_cell = str(prior_rank) if prior_rank else "&mdash;"
+        prior_cell = str(prior_rank) if prior_rank else "N/A"
         mover_rows += f"""
             <tr>
               <td><span class="rank-num {top3_class}">{rank}</span></td>
@@ -1527,7 +1693,7 @@ def build_section4(findings: dict) -> str:
     dropoff_html = ""
     if dropoffs:
         dropoff_items = "".join(
-            f'<li><strong>{esc(d["brand"])}</strong> — was ranked #{d["prior_rank"]} in the prior report</li>'
+            f'<li><strong>{esc(d["brand"])}</strong>, ranked #{d["prior_rank"]} in the prior report</li>'
             for d in sorted(dropoffs, key=lambda x: x["prior_rank"])
         )
         dropoff_html = f"""
@@ -1628,7 +1794,7 @@ def build_cta_section(findings: dict) -> str:
     </h2>
     <p style="font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:40px;max-width:560px;margin-left:auto;margin-right:auto">
       Request a custom AI Search Visibility Report to see where you stand,
-      what&rsquo;s driving your visibility &mdash; or holding it back &mdash; and how to close the gap.
+      what&rsquo;s driving your visibility, what&rsquo;s holding it back, and how to close the gap.
       Tailored insights and actionable strategies built around your brand, your sector,
       and your competitive landscape.
     </p>
@@ -1687,6 +1853,7 @@ def render_report(findings: dict) -> str:
 
     sidebar = build_sidebar(findings)
     hero = build_hero(findings)
+    exec_summary = build_executive_summary(findings)
     s1 = build_section1(findings)
     s2 = build_section2(findings)
     s3 = build_section3(findings)
@@ -1708,6 +1875,7 @@ def render_report(findings: dict) -> str:
   {sidebar}
   <div class="main">
     {hero}
+    {exec_summary}
     {s1}
     {s2}
     {s3}
