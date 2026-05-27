@@ -700,11 +700,100 @@ def test_metadata_assembly():
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 8. LIVE API PING (only when --live flag passed)
+# 8. Z-SCORE + EXECUTIVE SUMMARY
+# ─────────────────────────────────────────────────────────────────────────────
+
+def test_z_scores():
+    print("\n--- 8a. compute_z_scores ---")
+    from agent import compute_z_scores
+
+    sov, earned, owned, technical, trends = _build_fixtures()
+    z_scores = compute_z_scores(sov, technical, earned)
+
+    if isinstance(z_scores, list) and len(z_scores) > 0:
+        ok(f"compute_z_scores returned {len(z_scores)} entries")
+    else:
+        fail("compute_z_scores returned entries", f"got: {z_scores}")
+        return
+
+    entry = z_scores[0]
+    for key in ("brand", "z_score", "breadth", "depth", "authority", "positioning"):
+        if key in entry:
+            ok(f"z_score entry has key '{key}'")
+        else:
+            fail(f"z_score entry has key '{key}'", "missing")
+
+    if 0 <= entry["z_score"] <= 100:
+        ok(f"z_score is in range 0-100 ({entry['z_score']})")
+    else:
+        fail("z_score in range 0-100", f"got {entry['z_score']}")
+
+    # Sorted descending
+    scores = [z["z_score"] for z in z_scores]
+    if scores == sorted(scores, reverse=True):
+        ok("z_scores sorted descending")
+    else:
+        fail("z_scores sorted descending", f"order: {scores[:5]}")
+
+
+def test_executive_summary():
+    print("\n--- 8b. generate_executive_summary ---")
+    from agent import generate_executive_summary, generate_recommendations
+
+    sov, earned, owned, technical, trends = _build_fixtures()
+    recs = generate_recommendations(sov, earned, owned, technical)
+    exec_s = generate_executive_summary(sov, earned, trends, recs, "Test: Industry")
+
+    for key in ("headline", "subheadline", "takeaways"):
+        if key in exec_s:
+            ok(f"exec_summary has key '{key}'")
+        else:
+            fail(f"exec_summary has key '{key}'", "missing")
+            return
+
+    count = len(exec_s["takeaways"])
+    if count == 5:
+        ok("exec_summary has 5 takeaways")
+    else:
+        fail("exec_summary has 5 takeaways", f"got {count}")
+
+    # All 5 takeaways must have headline, detail, action
+    for i, t in enumerate(exec_s["takeaways"]):
+        for key in ("number", "headline", "detail", "action"):
+            if key in t:
+                ok(f"takeaway {i+1} has key '{key}'")
+            else:
+                fail(f"takeaway {i+1} has key '{key}'", "missing")
+
+    # No two takeaways should have the same headline
+    headlines = [t["headline"] for t in exec_s["takeaways"]]
+    if len(headlines) == len(set(headlines)):
+        ok("all 5 takeaway headlines are distinct")
+    else:
+        dupes = [h for h in headlines if headlines.count(h) > 1]
+        fail("all 5 takeaway headlines are distinct", f"duplicates: {dupes}")
+
+    # No action text should be truncated mid-sentence (no trailing "...")
+    for i, t in enumerate(exec_s["takeaways"]):
+        action = t.get("action", "")
+        if action.endswith("..."):
+            fail(f"takeaway {i+1} action not truncated", f"ends with '...': {action[-60:]}")
+        else:
+            ok(f"takeaway {i+1} action not truncated")
+
+    # Exec summary headline mentions the industry
+    if "Test: Industry" in exec_s["headline"]:
+        ok("exec_summary headline includes industry name")
+    else:
+        fail("exec_summary headline includes industry name", exec_s["headline"])
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 9. LIVE API PING (only when --live flag passed)
 # ─────────────────────────────────────────────────────────────────────────────
 
 def test_live_api():
-    print("\n--- 8. Live API ping ---")
+    print("\n--- 9. Live API ping ---")
     import requests
     from dotenv import load_dotenv
 
@@ -758,11 +847,13 @@ if __name__ == "__main__":
     test_bad_inputs()
     test_csv_roundtrip()
     test_metadata_assembly()
+    test_z_scores()
+    test_executive_summary()
 
     if live:
         test_live_api()
     else:
-        print("\n--- 8. Live API ping --- (skipped — run with --live to include)")
+        print("\n--- 9. Live API ping --- (skipped — run with --live to include)")
 
     print("\n" + "=" * 60)
     print(f"  {TESTS_PASSED} passed  |  {TESTS_FAILED} failed")

@@ -1321,8 +1321,15 @@ def generate_executive_summary(
         })
 
     # Takeaway 4: pick a trend that doesn't duplicate takeaways 2 or 3
-    # Skip concentration/contestability trends (covered in #3) and earned/PR trends (covered in #2)
-    _skip_keywords = ("contestable", "concentrated", "concentration", "earned", "pr and", "press")
+    # Skip concentration/contestability trends (covered in #3) and earned/owned trends (covered in #2)
+    # "winner" covers "Winner-take-most" (concentrated path) which mirrors takeaway 3
+    # "owned content" covers the high-owned variant of trend 2 which mirrors takeaway 2
+    _skip_keywords = (
+        "contestable", "concentrated", "concentration",
+        "winner",
+        "earned", "pr and", "press",
+        "owned content",
+    )
     t4 = None
     for t in trends:
         title_lower = t["title"].lower()
