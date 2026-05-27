@@ -1320,27 +1320,34 @@ def generate_executive_summary(
             ),
         })
 
-    # Takeaway 4: primary trend insight
-    if trends:
-        t = trends[0]
+    # Takeaway 4: pick a trend that doesn't duplicate takeaways 2 or 3
+    # Skip concentration/contestability trends (covered in #3) and earned/PR trends (covered in #2)
+    _skip_keywords = ("contestable", "concentrated", "concentration", "earned", "pr and", "press")
+    t4 = None
+    for t in trends:
+        title_lower = t["title"].lower()
+        if not any(kw in title_lower for kw in _skip_keywords):
+            t4 = t
+            break
+    if t4 is None and trends:
+        # Fallback: use last trend (least likely to overlap with 2/3)
+        t4 = trends[-1]
+    if t4:
         takeaways.append({
             "number": 4,
-            "headline": t["title"],
-            "detail": t["insight"],
-            "action": t["implication"],
+            "headline": t4["title"],
+            "detail": t4["insight"],
+            "action": t4["implication"],
         })
 
-    # Takeaway 5: highest-priority recommendation
+    # Takeaway 5: highest-priority recommendation (no truncation — full action text)
     if recs:
         r = recs[0]
-        action_text = r["what"]
-        if len(action_text) > 200:
-            action_text = action_text[:197] + "..."
         takeaways.append({
             "number": 5,
             "headline": f"Highest-priority action: {r['title']}",
             "detail": r["why"],
-            "action": action_text,
+            "action": r["what"],
         })
 
     return {
