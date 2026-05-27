@@ -533,10 +533,14 @@ def analyze_earned_media(df: pd.DataFrame) -> dict:
     owned_pct = round(len(owned) / total * 100, 1) if total else 0
 
     # Earned media type breakdown (only when source URL data is available)
+    # Rename 'owned_blog' to 'Brand Website' in earned citations — these are competitor
+    # brand pages (is_owned=0) classified by URL pattern, not the owned brand's content.
+    # Keeps the label from colliding with the 'Owned Media' section terminology.
+    _EARNED_LABEL_MAP = {"owned_blog": "Brand Website"}
     if len(earned):
         earned_types = earned[earned["media_type"] != ""].groupby("media_type").size()
         earned_breakdown = {
-            t.title(): {
+            _EARNED_LABEL_MAP.get(t, t).title(): {
                 "count": int(c),
                 "pct": round(c / len(earned) * 100, 1),
             }
@@ -663,10 +667,19 @@ def analyze_technical_factors(df: pd.DataFrame) -> dict:
     )
     top_brand = tech_df.iloc[0]["brand"] if len(tech_df) else "N/A"
 
+    # Detect whether position data is actually differentiated.
+    # On the CSV path, all competitor citation_ranks are hardcoded to 1 by the mapper,
+    # producing a flat table where every brand ties at avg=1.0. When this happens,
+    # naming a "leader" is misleading — suppress that narrative.
+    min_rank = tech_df["avg_rank"].min() if len(tech_df) else 1.0
+    brands_at_min = (tech_df["avg_rank"] == min_rank).sum()
+    position_is_differentiated = bool(brands_at_min <= 2 and min_rank < tech_df["avg_rank"].max())
+
     return {
         "has_rank_data": True,
         "technical_leaders": tech_df.to_dict("records"),
         "top_technical_brand": str(top_brand),
+        "position_is_differentiated": position_is_differentiated,
     }
 
 
@@ -1023,7 +1036,8 @@ def generate_recommendations(
     # ── Rec 4: technical leader injection ────────────────────────────────────
     top_tech_brand = (technical or {}).get("top_technical_brand", "")
     has_rank_data = (technical or {}).get("has_rank_data", False)
-    if has_rank_data and top_tech_brand and top_tech_brand != "N/A":
+    position_differentiated = (technical or {}).get("position_is_differentiated", False)
+    if has_rank_data and top_tech_brand and top_tech_brand != "N/A" and position_differentiated:
         rec4_why = (
             f"Technical signals including schema markup, entity recognition, and structured data "
             f"help AI models identify and trust your brand as a category authority. "

@@ -1508,9 +1508,11 @@ def build_section3(findings: dict) -> str:
       better schema markup, and more comprehensive entity recognition.
     </p>
     <p class="narrative">
-      <strong>{esc(technical.get('top_technical_brand', 'N/A'))}</strong> leads on average
-      citation position in this analysis, suggesting strong technical optimization
-      supporting its AI visibility profile.
+      {
+        f"<strong>{esc(technical.get('top_technical_brand', 'N/A'))}</strong> leads on average citation position in this analysis, suggesting strong technical optimization supporting its AI visibility profile."
+        if technical.get('position_is_differentiated')
+        else "Citation position is uniform across this dataset — most brands in this category are cited in the first position when they appear. Technical differentiation at this level is determined by consistency of citation across the full prompt set, not by positional variance."
+      }
     </p>
     {tech_table}
     <div class="insight-box" style="margin-top:24px">
